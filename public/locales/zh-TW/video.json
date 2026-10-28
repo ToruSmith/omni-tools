@@ -1,0 +1,181 @@
+{
+  "addAudio": {
+    "audioFile": "音訊檔案",
+    "audioInputTitle": "輸入音訊",
+    "description": "輕鬆為任何影片檔案加入音軌。你可以選擇完全取代原始音訊，或將新音軌與現有音訊混合。可調整音量、設定循環選項，並以精確的開始與結束時間裁剪音訊。支援所有常見的影片與音訊格式，編輯彈性高、成果快速。",
+    "durationMode": "時間範圍",
+    "endTime": "結束時間",
+    "endTimeDesc": "新音訊停止播放的時間（HH:MM:SS.mm）。",
+    "loadingText": "正在為影片加入音訊…",
+    "loop": "循環（重複播放音訊，直到影片結束或指定的結束時間）",
+    "loopOption": "循環選項",
+    "mode": "音訊模式",
+    "modeMix": "混合（保留原始音訊並加入新音訊）",
+    "modeReplace": "取代原始音訊",
+    "noLoop": "不循環（音訊只播放一次）",
+    "resultTitle": "處理後的影片",
+    "shortDescription": "為影片加入或取代音軌",
+    "startTime": "開始時間",
+    "startTimeDesc": "新音訊開始播放的時間（HH:MM:SS.mm）。",
+    "timing": "音訊時間點",
+    "timingDefault": "預設（整支影片）",
+    "timingEnd": "設定結束時間",
+    "timingModeDesc": "選擇新音訊在影片時間軸上的播放時機。",
+    "timingStart": "設定開始時間",
+    "timingStartEnd": "設定開始與結束時間",
+    "title": "為影片加入音訊",
+    "videoInputTitle": "輸入影片",
+    "volume": "新音訊音量",
+    "volumeDesc": "新音軌的音量大小。"
+  },
+  "changeSpeed": {
+    "description": "更改影片檔案的播放速度。在維持音訊同步的情況下加快或放慢影片。支援各種速度倍率與常見的影片格式。",
+    "inputTitle": "輸入影片",
+    "options": "選項",
+    "resultTitle": "編輯後的影片",
+    "shortDescription": "更改影片播放速度",
+    "speedLabel": "速度：x",
+    "title": "更改影片速度",
+    "toolInfo": {
+      "longDescription": "{{title}}可讓你直接在瀏覽器中調整影片的播放速度。你可以加快影片以製作快轉效果，或放慢影片製作慢動作播放，同時保持音訊同步。選擇 0.25 倍到 4 倍之間的速度倍率來自訂你的影片，不必安裝額外軟體就能輕鬆處理。這個工具支援常見的影片格式，並在處理過程中盡可能保留原始影片品質。",
+      "title": "什麼是{{title}}？"
+    }
+  },
+  "compress": {
+    "default": "預設",
+    "description": "將影片縮放為 240p、480p、720p 等不同解析度來壓縮影片。這個工具有助於在維持可接受品質的同時縮小檔案大小。支援 MP4、WebM 和 OGG 等常見影片格式。",
+    "inputTitle": "輸入影片",
+    "loadingText": "正在壓縮影片…",
+    "lossless": "無損",
+    "quality": "品質（CRF）",
+    "resolution": "解析度",
+    "resultTitle": "壓縮後的影片",
+    "shortDescription": "透過縮放為不同解析度來壓縮影片",
+    "title": "壓縮影片",
+    "worst": "最差"
+  },
+  "cropVideo": {
+    "cropCoordinates": "裁切座標",
+    "croppingVideo": "正在裁切影片",
+    "description": "裁切影片以移除不需要的區域。",
+    "errorBeyondHeight": "裁切區域超出影片高度（{{height}} 像素）",
+    "errorBeyondWidth": "裁切區域超出影片寬度（{{width}} 像素）",
+    "errorCroppingVideo": "裁切影片時發生錯誤。請檢查參數與影片檔案。",
+    "errorLoadingDimensions": "無法載入影片尺寸",
+    "errorNonNegativeCoordinates": "X 與 Y 座標必須為非負數",
+    "errorPositiveDimensions": "寬度與高度必須為正數",
+    "height": "高度",
+    "inputTitle": "輸入影片",
+    "loadVideoForDimensions": "載入影片以查看尺寸",
+    "longDescription": "這個工具可讓你裁切影片檔案，移除不需要的區域或聚焦於影片的特定部分。適合用來移除黑邊、調整長寬比，或聚焦於重要內容。支援多種影片格式，包括 MP4、MOV 和 AVI。",
+    "resultTitle": "裁切後的影片",
+    "shortDescription": "裁切影片以移除不需要的區域",
+    "title": "裁切影片",
+    "toolInfo": {
+      "description": "這個工具可讓你裁切影片檔案以移除不需要的區域。你可以透過設定 X、Y 座標以及寬度、高度尺寸來指定裁切區域。",
+      "title": "裁切影片"
+    },
+    "videoDimensions": "影片尺寸：{{width}} × {{height}} 像素",
+    "videoInformation": "影片資訊",
+    "width": "寬度",
+    "xCoordinate": "X（左）",
+    "yCoordinate": "Y（上）"
+  },
+  "flip": {
+    "description": "水平或垂直翻轉影片檔案。可將影片鏡像以製作特殊效果，或修正方向問題。",
+    "horizontalLabel": "水平（鏡像）",
+    "inputTitle": "輸入影片",
+    "orientation": "方向",
+    "resultTitle": "翻轉後的影片",
+    "shortDescription": "水平或垂直翻轉影片",
+    "title": "翻轉影片",
+    "verticalLabel": "垂直（上下顛倒）"
+  },
+  "gif": {
+    "changeSpeed": {
+      "description": "更改 GIF 動畫的播放速度。在保持動畫流暢的情況下加快或放慢 GIF。",
+      "inputTitle": "輸入 GIF",
+      "options": {
+        "speedLabel": "速度：x",
+        "title": "選項"
+      },
+      "resultTitle": "輸出 GIF",
+      "shortDescription": "更改 GIF 動畫速度",
+      "title": "更改 GIF 速度"
+    },
+    "imagesToGif": {
+      "title": "圖片轉 GIF",
+      "description": "從多張圖片建立動態 GIF。排列你的影格、調整時間，只要點幾下就能產生流暢的動畫。",
+      "shortDescription": "將多張圖片轉換為動態 GIF",
+      "inputTitle": "輸入圖片",
+      "resultTitle": "動態 GIF",
+      "loadingText": "正在建立 GIF…",
+      "frameOptions": "影格選項",
+      "frameDelayDescription": "每個影格的顯示時間，以毫秒為單位（例如 500 = 每個影格 0.5 秒）",
+      "frameRateDescription": "以每秒影格數（FPS）設定動畫速度",
+      "frameRateValueDescription": "設定想要的值",
+      "frameDelay": "影格延遲",
+      "frameRate": "每秒影格數（FPS）"
+    }
+  },
+  "loop": {
+    "description": "將原始影片重複多次，建立循環播放的影片。",
+    "inputTitle": "輸入影片",
+    "loops": "循環次數",
+    "numberOfLoops": "循環次數",
+    "resultTitle": "循環後的影片",
+    "shortDescription": "建立循環播放的影片檔案",
+    "title": "循環影片",
+    "toolInfo": {
+      "description": "這個工具可讓你將原始影片重複多次，建立循環播放的影片。你可以指定影片要循環幾次。",
+      "title": "什麼是{{title}}？"
+    }
+  },
+  "mergeVideo": {
+    "description": "將多個影片檔案合併為一支連續的影片。",
+    "inputTitle": "輸入影片",
+    "longDescription": "這個工具可讓你將多個影片檔案合併或接續為一支連續的影片。只要上傳你的影片檔案、依想要的順序排列，再合併為單一檔案，就能方便分享或編輯。",
+    "resultTitle": "合併後的影片",
+    "shortDescription": "輕鬆接續並合併影片。",
+    "title": "合併影片"
+  },
+  "resize": {
+    "customDimensions": "自訂尺寸",
+    "customMode": "自訂尺寸",
+    "customModeDesc": "設定你自己的寬度與高度",
+    "description": "將影片調整為 240p、360p、480p、720p 和 1080p 等不同解析度，或設定自訂的寬度與高度。預設會維持長寬比，以避免畫面變形。支援 MP4、WebM 和 OGG 等常見影片格式。",
+    "height": "高度（像素）",
+    "inputTitle": "輸入影片",
+    "loadingText": "正在調整影片大小…",
+    "maintainAspectRatio": "維持長寬比",
+    "mode": "調整大小模式",
+    "presetMode": "預設解析度",
+    "presetModeDesc": "從標準影片解析度中選擇",
+    "resolution": "解析度",
+    "resultTitle": "調整大小後的影片",
+    "shortDescription": "將影片調整為不同解析度",
+    "title": "調整影片大小",
+    "width": "寬度（像素）"
+  },
+  "rotate": {
+    "180Degrees": "180°（上下顛倒）",
+    "270Degrees": "270°（逆時針 90°）",
+    "90Degrees": "順時針 90°",
+    "description": "將影片檔案旋轉 90、180 或 270 度。以精確的旋轉控制修正影片方向或製作特殊效果。",
+    "inputTitle": "輸入影片",
+    "resultTitle": "旋轉後的影片",
+    "rotation": "旋轉",
+    "shortDescription": "將影片旋轉指定的度數",
+    "title": "旋轉影片"
+  },
+  "trim": {
+    "description": "透過指定開始與結束時間來剪輯影片檔案。可移除影片開頭或結尾不需要的部分。",
+    "endTime": "結束時間",
+    "inputTitle": "輸入影片",
+    "resultTitle": "剪輯後的影片",
+    "shortDescription": "移除不需要的部分以剪輯影片",
+    "startTime": "開始時間",
+    "timestamps": "時間戳記",
+    "title": "剪輯影片"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "compressPdf": {
+    "compressedFileSize": "壓縮後的檔案大小",
+    "compressingPdf": "正在壓縮 PDF…",
+    "compressionLevel": "壓縮等級",
+    "compressionSettings": "壓縮設定",
+    "description": "使用 Ghostscript 在維持品質的同時縮小 PDF 檔案大小",
+    "errorCompressingPdf": "壓縮 PDF 失敗：{{error}}",
+    "errorReadingPdf": "無法讀取 PDF 檔案，請確認它是有效的 PDF。",
+    "fileSize": "原始檔案大小",
+    "highCompression": "高壓縮",
+    "highCompressionDescription": "最大幅度縮小檔案大小，但會有部分品質損失",
+    "inputTitle": "輸入 PDF",
+    "longDescription": "使用 Ghostscript 在瀏覽器中安全地壓縮 PDF 檔案。你的檔案絕不會離開你的裝置，在縮小檔案以便透過電子郵件分享、上傳到網站或節省儲存空間的同時，完整保護你的隱私。採用 WebAssembly 技術。",
+    "lowCompression": "低壓縮",
+    "lowCompressionDescription": "略微縮小檔案大小，品質損失極小",
+    "mediumCompression": "中壓縮",
+    "mediumCompressionDescription": "在檔案大小與品質之間取得平衡",
+    "pages": "頁數",
+    "resultTitle": "壓縮後的 PDF",
+    "shortDescription": "在瀏覽器中安全地壓縮 PDF 檔案",
+    "title": "壓縮 PDF"
+  },
+  "convertToPdf": {
+    "description": "將各種圖片格式（PNG、GIF、JPG、WEBP、HEIC、HEIF）轉換為 PDF，並可縮放圖片與選擇頁面方向。",
+    "inputTitle": "輸入圖片",
+    "options": {
+      "a4": "A4 頁面",
+      "fullsize": "完整大小（圖片大小）",
+      "image": "圖片",
+      "landscape": "橫向（水平）",
+      "orientation": "方向",
+      "portrait": "直向（垂直）",
+      "scale": "縮放",
+      "type": "PDF 類型"
+    },
+    "resultTitle": "輸出 PDF",
+    "shortDescription": "將圖片轉換為 PDF，並可控制縮放與方向",
+    "title": "圖片轉 PDF"
+  },
+  "editor": {
+    "description": "進階 PDF 編輯器，具備註解、表單填寫、醒目提示與匯出功能。直接在瀏覽器中使用專業級工具編輯你的 PDF，包括插入文字、繪圖、醒目提示、簽名與表單填寫。",
+    "shortDescription": "使用進階的註解、簽名與編輯工具編輯 PDF",
+    "title": "PDF 編輯器",
+    "upload": "上傳 PDF",
+    "clear": "清除輸入"
+  },
+  "formBuilder": {
+    "title": "PDF 表單建立器",
+    "description": "直接在瀏覽器中建立並自訂互動式 PDF 表單。可新增文字欄位、核取方塊、選項按鈕、標籤等，並完整支援拖放、樣式選項與匯出功能。",
+    "shortDescription": "使用拖放工具輕鬆設計並建立互動式 PDF 表單",
+    "toolbox": {
+      "title": "工具箱",
+      "checkbox": "核取方塊",
+      "radio": "選項按鈕",
+      "label": "標籤／文字",
+      "text": "文字",
+      "textarea": "多行文字"
+    },
+    "file": {
+      "upload": "上傳 PDF",
+      "export": "匯出並下載",
+      "clear": "清除輸入"
+    }
+  },
+  "extractImagesFromPdf": {
+    "description": "以原始品質擷取 PDF 檔案中所有內嵌的圖片。",
+    "inputTitle": "輸入 PDF",
+    "longDescription": "上傳 PDF 文件即可自動擷取所有內嵌的圖片。這個工具會保留原始圖片品質，並支援 JPG、PNG 等常見格式。非常適合用來還原 PDF 文件中的插圖、照片、掃描頁面或素材。",
+    "resultTitle": "擷取的圖片",
+    "shortDescription": "從 PDF 檔案中擷取圖片。",
+    "title": "從 PDF 擷取圖片"
+  },
+  "merge": {
+    "inputTitle": "輸入 PDF",
+    "loadingText": "正在擷取頁面",
+    "resultTitle": "輸出合併後的 PDF",
+    "toolInfo": {
+      "description": "這個工具可讓你將多個 PDF 檔案合併為單一文件。使用時，只要上傳你想合併的 PDF 檔案，工具就會將輸入檔案中的所有頁面合併成一份 PDF 文件。",
+      "title": "如何使用合併 PDF 工具？"
+    }
+  },
+  "mergePdf": {
+    "description": "將多個 PDF 檔案合併為單一文件。",
+    "inputTitle": "輸入 PDF",
+    "mergingPdfs": "正在合併 PDF",
+    "pdfOptions": "PDF 選項",
+    "resultTitle": "合併後的 PDF",
+    "shortDescription": "將多個 PDF 檔案合併為單一文件",
+    "sortByFileName": "依檔名排序",
+    "sortByFileNameDescription": "依檔名的字母順序排序 PDF",
+    "sortByUploadOrder": "依上傳順序排序",
+    "sortByUploadOrderDescription": "維持 PDF 的上傳順序",
+    "title": "合併 PDF",
+    "toolInfo": {
+      "description": "這個工具可讓你將多個 PDF 檔案合併為單一文件。你可以選擇 PDF 的排序方式，工具會依指定的順序進行合併。",
+      "title": "合併 PDF 檔案"
+    }
+  },
+  "pdfToEpub": {
+    "description": "將 PDF 文件轉換為 EPUB 檔案，提升在電子書閱讀器上的相容性。",
+    "shortDescription": "將 PDF 檔案轉換為 EPUB 格式",
+    "title": "PDF 轉 EPUB"
+  },
+  "pdfToPng": {
+    "description": "將 PDF 文件轉換為 PNG 圖片。",
+    "longDescription": "上傳 PDF，直接在瀏覽器中將每一頁轉換為高品質的 PNG 圖片。這個工具非常適合用來擷取視覺內容或分享單一頁面。不會上傳任何資料——所有處理都在本機執行。",
+    "shortDescription": "將 PDF 轉換為 PNG 圖片",
+    "title": "PDF 轉 PNG"
+  },
+  "protectPdf": {
+    "description": "在瀏覽器中安全地為你的 PDF 檔案加上密碼保護",
+    "shortDescription": "安全地為 PDF 檔案設定密碼保護",
+    "title": "保護 PDF"
+  },
+  "rotatePdf": {
+    "allPagesWillBeRotated": "全部 {{count}} 頁都會被旋轉",
+    "angleOptions": {
+      "clockwise90": "順時針 90°",
+      "counterClockwise270": "270°（逆時針 90°）",
+      "upsideDown180": "180°（上下顛倒）"
+    },
+    "applyToAllPages": "套用到所有頁面",
+    "description": "旋轉 PDF 文件中的頁面。",
+    "inputTitle": "輸入 PDF",
+    "longDescription": "將 PDF 頁面旋轉 90、180 或 270 度，以變更頁面方向。適合用來修正掃描方向錯誤的文件，或為列印準備 PDF。",
+    "pageRangesDescription": "輸入以逗號分隔的頁碼或頁碼範圍（例如 1,3,5-7）",
+    "pageRangesPlaceholder": "例如 1,5-8",
+    "pagesWillBeRotated": "{{count}} 頁將被旋轉",
+    "pdfPageCount": "PDF 共有 {{count}} 頁",
+    "resultTitle": "旋轉後的 PDF",
+    "rotatingPages": "正在旋轉頁面",
+    "rotationAngle": "旋轉角度",
+    "rotationSettings": "旋轉設定",
+    "shortDescription": "旋轉 PDF 文件中的頁面",
+    "title": "旋轉 PDF",
+    "toolInfo": {
+      "description": "這個工具可讓你旋轉 PDF 文件中的頁面。你可以旋轉所有頁面，也可以指定要旋轉的個別頁面。請選擇旋轉角度：順時針 90°、180°（上下顛倒）或 270°（逆時針 90°）。若要旋轉指定頁面，請取消勾選「套用到所有頁面」，並輸入以逗號分隔的頁碼或頁碼範圍（例如 1,3,5-7）。",
+      "title": "如何使用旋轉 PDF 工具"
+    }
+  },
+  "splitPdf": {
+    "description": "從 PDF 文件中擷取指定頁面。",
+    "extractingPages": "正在擷取頁面",
+    "inputTitle": "輸入 PDF",
+    "pageExtractionPreview": "{{count}} 頁將被擷取",
+    "pageRangesDescription": "輸入以逗號分隔的頁碼或頁碼範圍（例如 1,3,5-7）",
+    "pageRangesPlaceholder": "例如 1,5-8",
+    "pageSelection": "頁面選擇",
+    "pdfPageCount": "PDF 共有 {{count}} 頁",
+    "resultTitle": "擷取後的 PDF",
+    "shortDescription": "從 PDF 檔案中擷取指定頁面",
+    "title": "分割 PDF",
+    "toolInfo": {
+      "description": "這個工具可讓你從 PDF 文件中擷取指定頁面。你可以指定個別頁面或頁碼範圍來擷取。",
+      "title": "分割 PDF"
+    }
+  }
+}

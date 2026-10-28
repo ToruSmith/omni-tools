@@ -31,6 +31,7 @@ i18n
   .init({
     supportedLngs: [
       'en',
+      'zh-TW',
       'de',
       'es',
       'fr',

@@ -1,0 +1,57 @@
+{
+  "audioConverter": {
+    "description": "在不同格式之間轉換音訊檔案。",
+    "inputTitle": "音訊輸入",
+    "longDescription": "這個工具可讓你將音訊檔案從一種格式轉換為另一種格式，支援多種音訊格式，輕鬆完成轉換。",
+    "outputFormat": "輸出格式",
+    "outputFormatDescription": "選擇所需的輸出音訊格式",
+    "outputTitle": "轉換後的音訊",
+    "shortDescription": "將音訊檔案轉換為各種格式。",
+    "title": "音訊轉換器"
+  },
+  "convertToJPG": {
+    "description": "將各種圖片格式轉換為 JPG，並可自訂品質與背景顏色設定。",
+    "failedToConvert": "圖片轉換為 JPG 失敗，請再試一次。",
+    "inputTitle": "輸入圖片",
+    "options": {
+      "colorDescription": "背景顏色（用於透明圖片）",
+      "quality": "轉換品質：",
+      "qualityDescription": "數值越高，品質越好，檔案也越大",
+      "title": "轉換設定"
+    },
+    "resultTitle": "JPG 圖片",
+    "shortDescription": "將圖片轉換為 JPG 格式，並可控制品質",
+    "title": "將圖片轉換為 JPG"
+  },
+  "convertToWebp": {
+    "description": "將各種圖片格式轉換為 WebP 格式，並可自訂品質與背景顏色設定。",
+    "failedToConvert": "圖片轉換為 WebP 失敗，請再試一次。",
+    "inputTitle": "輸入圖片",
+    "options": {
+      "colorDescription": "背景顏色（用於透明圖片）",
+      "quality": "轉換品質：",
+      "qualityDescription": "數值越高，品質越好，檔案也越大",
+      "title": "轉換設定"
+    },
+    "resultTitle": "WEBP 圖片",
+    "shortDescription": "將圖片轉換為 WebP 格式，並可控制品質。",
+    "title": "將圖片轉換為 WebP"
+  },
+  "videoToGif": {
+    "description": "將影片檔案轉換為動態 GIF 格式。可擷取指定的時間範圍，製作方便分享的動態圖片。",
+    "inputTitle": "輸入影片",
+    "options": {
+      "endTime": "結束時間",
+      "high": "高",
+      "low": "低",
+      "mid": "中",
+      "quality": "品質",
+      "startTime": "開始時間",
+      "timestamps": "時間戳記",
+      "ultra": "極高"
+    },
+    "resultTitle": "輸出的 GIF",
+    "shortDescription": "將影片轉換為動態 GIF",
+    "title": "影片轉 GIF"
+  }
+}

@@ -1,0 +1,423 @@
+{
+  "base64": {
+    "decode": "Base64 解碼",
+    "description": "使用 Base64 編碼對文字進行編碼或解碼。",
+    "encode": "Base64 編碼",
+    "inputTitle": "輸入資料",
+    "optionsTitle": "Base64 選項",
+    "resultTitle": "結果",
+    "shortDescription": "使用 Base64 對資料進行編碼或解碼。",
+    "title": "Base64 編碼器／解碼器",
+    "toolInfo": {
+      "description": "Base64 是一種編碼方案，透過轉換為 64 進位表示法，將資料以 ASCII 字串格式呈現。雖然它可用來編碼字串，但更常用於編碼二進位資料，以便透過專為處理文字資料而設計的媒介傳輸。",
+      "title": "什麼是 Base64？"
+    }
+  },
+  "censor": {
+    "description": "文字內容審查工具。將文字載入左側的輸入表單，並在選項中指定所有不當字詞，輸出區就會立即顯示審查後的文字。",
+    "shortDescription": "快速遮蔽不當字詞，或以替代字詞取代。",
+    "title": "文字審查"
+  },
+  "createPalindrome": {
+    "description": "全球最簡單的瀏覽器版迴文建立工具。輸入任何文字，立即將它轉換為正讀與反讀都相同的迴文。非常適合文字遊戲、建立對稱的文字圖樣，或探索語言趣味。",
+    "shortDescription": "建立正讀與反讀都相同的文字",
+    "title": "建立迴文"
+  },
+  "emailExtractor": {
+    "description": "從任何文字中擷取所有電子郵件地址。只要貼上你的文字，就能立即取得乾淨的電子郵件地址清單。",
+    "options": {
+      "title": "擷取選項",
+      "uniqueDesc": "結果中只保留不重複的電子郵件地址",
+      "uniqueTitle": "移除重複項目"
+    },
+    "shortDescription": "從文字中擷取電子郵件地址",
+    "title": "電子郵件擷取器"
+  },
+  "extractSubstring": {
+    "description": "全球最簡單的瀏覽器版子字串擷取工具。輸入你的文字並指定起始與結束位置，即可擷取所需的部分。非常適合用於資料處理、文字分析，或從較大的文字區塊中擷取特定內容。",
+    "shortDescription": "擷取指定位置之間的部分文字",
+    "title": "擷取子字串"
+  },
+  "hiddenCharacterDetector": {
+    "analysisOptions": "分析選項",
+    "category": "類別",
+    "description": "偵測隱藏的 Unicode 字元，特別是可能被用於攻擊的 RTL 覆寫字元。",
+    "foundChars": "找到 {{count}} 個隱藏字元：",
+    "inputPlaceholder": "輸入要檢查隱藏字元的文字…",
+    "inputTitle": "要分析的文字",
+    "invisibleChar": "不可見字元",
+    "invisibleFound": "發現不可見字元",
+    "longDescription": "這個工具可協助你偵測文字中隱藏的 Unicode 字元，特別是可能被用於攻擊的由右至左（RTL）覆寫字元。它可以辨識不可見字元、零寬字元，以及其他可能隱藏在看似無害文字中的潛在惡意 Unicode 序列。",
+    "noHiddenChars": "文字中未偵測到隱藏字元。",
+    "optionsDescription": "設定要偵測哪些類型的隱藏字元，以及如何顯示結果。",
+    "position": "位置",
+    "rtlAlert": "⚠️ 偵測到 RTL 覆寫字元！這段文字可能包含惡意的隱藏字元。",
+    "rtlFound": "發現 RTL 覆寫",
+    "rtlOverride": "RTL 覆寫字元",
+    "rtlWarning": "警告：偵測到 RTL 覆寫字元！這可能被用於攻擊。",
+    "shortDescription": "找出文字中隱藏的 Unicode 字元",
+    "summary": "分析摘要",
+    "title": "隱藏字元偵測器",
+    "totalChars": "隱藏字元總數：{{count}}",
+    "unicode": "Unicode",
+    "zeroWidthChar": "零寬字元",
+    "zeroWidthFound": "發現零寬字元"
+  },
+  "join": {
+    "blankLinesAndTrailingSpaces": "空白行與行尾空白",
+    "deleteBlankDescription": "刪除沒有文字符號的行。",
+    "deleteBlankTitle": "刪除空白行",
+    "deleteTrailingDescription": "移除行尾的空格與 Tab。",
+    "deleteTrailingTitle": "刪除行尾空白",
+    "description": "以可自訂的分隔符號將文字片段合併在一起。",
+    "inputTitle": "文字片段",
+    "joinCharacterDescription": "用來連接分開文字片段的符號。（預設為空格。）",
+    "joinCharacterPlaceholder": "連接字元",
+    "resultTitle": "合併後的文字",
+    "shortDescription": "以指定的分隔符號合併文字元素",
+    "textMergedOptions": "文字合併選項",
+    "title": "合併文字",
+    "toolInfo": {
+      "description": "使用這個工具，你可以將文字的各個部分合併在一起。它會接收以換行分隔的一串文字值，並將它們合併起來。你可以設定要放在合併後各文字片段之間的字元。此外，你也可以忽略所有空白行，並移除所有行尾的空格與 Tab。文字超好用！",
+      "title": "什麼是文字合併器？"
+    }
+  },
+  "palindrome": {
+    "description": "全球最簡單的瀏覽器版迴文檢查工具。立即確認你的文字是否正讀與反讀都相同。非常適合文字謎題、語言分析，或驗證對稱的文字圖樣。支援多種分隔符號與多個單字組成的迴文偵測。",
+    "shortDescription": "檢查文字是否正讀與反讀都相同",
+    "title": "迴文"
+  },
+  "passwordGenerator": {
+    "avoidAmbiguous": "避免易混淆的字元（i、I、l、0、O）",
+    "description": "產生安全的隨機密碼，並可自訂長度與字元類型。可選擇小寫字母、大寫字母、數字與特殊字元。還有避免易混淆字元的選項，以提升可讀性。",
+    "includeLowercase": "包含小寫字母（a-z）",
+    "includeNumbers": "包含數字（0-9）",
+    "includeSymbols": "包含特殊字元",
+    "includeUppercase": "包含大寫字母（A-Z）",
+    "lengthDesc": "密碼長度（大於 3 且小於 257）",
+    "lengthPlaceholder": "例如 12",
+    "optionsTitle": "密碼選項",
+    "resultTitle": "產生的密碼",
+    "shortDescription": "以自訂選項產生安全的隨機密碼",
+    "title": "密碼產生器",
+    "toolInfo": {
+      "description": "這個工具會依照你選擇的條件產生安全的隨機密碼。你可以自訂長度、包含或排除不同的字元類型，並避免易混淆的字元以提升可讀性。非常適合用來為帳號、應用程式或任何安全需求建立高強度密碼。",
+      "title": "關於密碼產生器"
+    }
+  },
+  "quote": {
+    "allowDoubleQuotation": "允許雙引號",
+    "description": "以可自訂的選項在文字前後加上引號。",
+    "inputTitle": "輸入文字",
+    "leftQuoteDescription": "左引號字元",
+    "processAsMultiLine": "以多行文字處理",
+    "quoteEmptyLines": "為空白行加上引號",
+    "quoteOptions": "引號選項",
+    "resultTitle": "加上引號的文字",
+    "rightQuoteDescription": "右引號字元",
+    "shortDescription": "以各種樣式在文字前後加上引號",
+    "title": "文字加引號",
+    "toolInfo": {
+      "description": "這個工具可讓你在文字前後加上引號。你可以選擇不同的引號字元、處理多行文字，並控制空白行的處理方式。它很適合用來為程式設計準備文字、格式化資料，或建立風格化的文字。",
+      "title": "文字加引號"
+    }
+  },
+  "randomizeCase": {
+    "description": "全球最簡單的瀏覽器版文字大小寫隨機化工具。輸入你的文字，立即將它轉換為大小寫隨機的字母。非常適合用來製造獨特的文字效果、測試大小寫敏感度，或產生多樣化的文字圖樣。",
+    "shortDescription": "隨機化文字中字母的大小寫",
+    "title": "隨機大小寫"
+  },
+  "removeDuplicateLines": {
+    "description": "將文字載入左側的輸入表單，輸出區就會立即顯示沒有重複行的文字。強大、免費又快速。載入文字行，得到不重複的文字行",
+    "shortDescription": "快速刪除文字中所有重複的行",
+    "title": "移除重複行"
+  },
+  "repeat": {
+    "delimiterDescription": "輸出副本之間的分隔符號。",
+    "delimiterPlaceholder": "分隔符號",
+    "description": "以可自訂的分隔符號將文字重複多次。",
+    "inputTitle": "輸入文字",
+    "numberPlaceholder": "數字",
+    "repeatAmountDescription": "重複次數。",
+    "repetitionsDelimiter": "重複分隔符號",
+    "resultTitle": "重複後的文字",
+    "shortDescription": "將文字重複多次",
+    "textRepetitions": "文字重複",
+    "title": "重複文字",
+    "toolInfo": {
+      "description": "這個工具可讓你將指定文字重複多次，並可選擇加上分隔符號。",
+      "title": "重複文字"
+    }
+  },
+  "reverse": {
+    "description": "全球最簡單的瀏覽器版文字反轉工具。輸入任何文字，即可立即逐字元反轉。非常適合製作鏡像文字、分析迴文或玩文字圖樣。反轉時會保留空白與特殊字元。",
+    "inputTitle": "要反轉的文字",
+    "processMultiLine": "處理多行文字",
+    "processMultiLineDescription": "每一行都會獨立反轉",
+    "resultTitle": "反轉後的文字",
+    "reversalOptions": "反轉選項",
+    "shortDescription": "將任何文字逐字元反轉",
+    "skipEmptyLines": "略過空白行",
+    "skipEmptyLinesDescription": "輸出中會移除空白行",
+    "title": "反轉",
+    "trimWhitespace": "修剪空白",
+    "trimWhitespaceDescription": "移除每一行前後的空白"
+  },
+  "rot13": {
+    "description": "使用 ROT13 密碼對文字進行編碼或解碼。",
+    "inputTitle": "輸入文字",
+    "resultTitle": "ROT13 結果",
+    "shortDescription": "使用 ROT13 密碼對文字進行編碼或解碼。",
+    "title": "ROT13 編碼器／解碼器",
+    "toolInfo": {
+      "description": "ROT13（旋轉 13 個位置）是一種簡單的字母替換密碼，會將每個字母替換為字母表中往後第 13 個字母。ROT13 是凱薩密碼的一種特例，而凱薩密碼起源於古羅馬。由於英文字母表有 26 個字母，ROT13 的反運算就是它本身；也就是說，要還原 ROT13，只要再套用一次相同的演算法，因此編碼與解碼可以使用相同的操作。",
+      "title": "什麼是 ROT13？"
+    }
+  },
+  "rotate": {
+    "description": "將文字中的字元旋轉指定的位置數。",
+    "inputTitle": "輸入文字",
+    "processAsMultiLine": "以多行文字處理（每行分別旋轉）",
+    "resultTitle": "旋轉後的文字",
+    "rotateLeft": "向左旋轉",
+    "rotateRight": "向右旋轉",
+    "rotationOptions": "旋轉選項",
+    "shortDescription": "依位置位移文字中的字元。",
+    "stepDescription": "要旋轉的位置數",
+    "title": "旋轉文字",
+    "toolInfo": {
+      "description": "這個工具可讓你將字串中的字元旋轉指定的位置數。你可以向左或向右旋轉，也可以將每行分別旋轉來處理多行文字。字串旋轉適合用於簡單的文字轉換、建立圖樣，或實作基本的加密技巧。",
+      "title": "字串旋轉"
+    }
+  },
+  "slugGenerator": {
+    "description": "將任何文字轉換為對網址友善的 slug。",
+    "inputTitle": "輸入文字",
+    "longDescription": "將任何文字轉換為乾淨、對 SEO 友善的 slug，用於網址中。這個工具可處理空格、特殊字元、帶重音符號的字母，並能一次處理多行——讓你輕鬆將部落格文章標題、產品名稱或頁面標題批次轉換為一致且易讀的網址片段。",
+    "options": {
+      "caseDescription": "保留輸入的原始大小寫，而不是轉換為小寫",
+      "caseLabel": "區分大小寫",
+      "title": "Slug 選項"
+    },
+    "resultTitle": "網址 Slug",
+    "shortDescription": "從文字產生對網址友善的 slug。",
+    "title": "Slug 產生器"
+  },
+  "split": {
+    "charAfterChunkDescription": "每個區塊後面的字元",
+    "charBeforeChunkDescription": "每個區塊前面的字元",
+    "chunksDescription": "輸出中等長度區塊的數量。",
+    "chunksTitle": "使用區塊數量",
+    "description": "全球最簡單的瀏覽器版文字分割工具。輸入你的文字並指定分隔符號，即可將它分割為多個部分。非常適合用於資料處理、文字處理，或從較大的文字區塊中擷取特定內容。",
+    "lengthDescription": "每個輸出區塊要放入的字元數。",
+    "lengthTitle": "使用長度分割",
+    "outputSeparatorDescription": "放在各分割區塊之間的字元。（預設為換行「\\n」。）",
+    "outputSeparatorOptions": "輸出分隔符號選項",
+    "regexDescription": "用來將文字拆分為多個部分的正規表示式。（預設為多個空格。）",
+    "regexTitle": "使用正規表示式分割",
+    "resultTitle": "分割結果",
+    "shortDescription": "使用分隔符號將文字分割為多個部分",
+    "splitSeparatorOptions": "分割分隔符號選項",
+    "symbolDescription": "用來將文字拆分為多個部分的字元。（預設為空格。）",
+    "symbolTitle": "使用符號分割",
+    "title": "分割"
+  },
+  "statistic": {
+    "characterFrequencyAnalysis": "字元頻率分析",
+    "characterFrequencyAnalysisDescription": "計算每個字元在文字中出現的次數",
+    "delimitersOptions": "分隔符號選項",
+    "description": "分析文字並產生完整的統計資料。",
+    "includeEmptyLines": "包含空白行",
+    "includeEmptyLinesDescription": "計算行數時包含空白行",
+    "inputTitle": "輸入文字",
+    "resultTitle": "文字統計",
+    "sentenceDelimitersDescription": "輸入你的語言中用來分隔句子的自訂字元（以逗號分隔），或留空使用預設值。",
+    "sentenceDelimitersPlaceholder": "例如 ., !, ?, ...",
+    "shortDescription": "取得文字的統計資料",
+    "statisticsOptions": "統計選項",
+    "title": "文字統計",
+    "toolInfo": {
+      "description": "這個工具可讓你分析文字並產生完整的統計資料，包括字元數、字數、行數，以及字元與單字的頻率分析。",
+      "title": "什麼是{{title}}？"
+    },
+    "wordDelimitersDescription": "輸入用來計算單字的自訂正規表示式，或留空使用預設值。",
+    "wordDelimitersPlaceholder": "例如 \\s.,;:!?\"«»()…",
+    "wordFrequencyAnalysis": "單字頻率分析",
+    "wordFrequencyAnalysisDescription": "計算每個單字在文字中出現的次數"
+  },
+  "tableTextConverter": {
+    "title": "表格文字轉換器",
+    "description": "在 Markdown、CSV、TSV、HTML、MySQL 查詢輸出與 JSON 格式之間轉換表格文字。",
+    "shortDescription": "在 Markdown、CSV、HTML、MySQL 與 JSON 之間轉換表格",
+    "longDescription": "這個工具可在多種格式之間轉換表格文字，包括 Markdown 表格、CSV、TSV、HTML 表格、MySQL／命令列查詢結果輸出，以及 JSON 陣列。以任何支援的格式貼上你的表格，選擇輸出格式（或讓工具自動偵測輸入格式），即可立即取得轉換後的表格。適合用來將 MySQL 查詢結果轉為文件用的 Markdown 表格、將 HTML 表格轉為試算表用的 CSV，或將 JSON 資料轉為易讀的表格。",
+    "inputTitle": "輸入表格",
+    "resultTitle": "轉換後的表格",
+    "options": "轉換選項",
+    "inputFormat": "輸入格式",
+    "outputFormat": "輸出格式",
+    "autoDetect": "自動偵測輸入格式（建議）",
+    "error": "錯誤"
+  },
+  "textCompare": {
+    "description": "分析兩段文字，標示出差異，包括新增、刪除與變更。",
+    "inputTitle": "輸入文字",
+    "longDescription": "這個工具可協助你快速找出兩個版本文字之間的差異。它會標示出插入、移除與修改的內容，非常適合用來審閱編輯、追蹤變更或比較文件。你可以依需求選擇偵測差異的精細程度，以單字或字元為單位。",
+    "options": {
+      "charLevel": "字元層級",
+      "levelDesc": "選擇比較的詳細程度。單字層級會以單字為單位標示變更，字元層級則能偵測更細微的差異。",
+      "title": "比較設定",
+      "wordLevel": "單字層級"
+    },
+    "resultTitle": "標示出的差異",
+    "shortDescription": "比較兩段文字並立即找出差異",
+    "title": "比較文字"
+  },
+  "textReplacer": {
+    "description": "以新內容取代文字樣式。",
+    "findPatternInText": "在文字中尋找此樣式",
+    "findPatternUsingRegexp": "使用正規表示式尋找樣式",
+    "inputTitle": "要取代的文字",
+    "newTextPlaceholder": "新文字",
+    "regexpDescription": "輸入你要取代的正規表示式。",
+    "replacePatternDescription": "輸入用於取代的樣式。",
+    "replaceText": "取代文字",
+    "resultTitle": "取代後的文字",
+    "searchPatternDescription": "輸入你要取代的文字樣式。",
+    "searchText": "搜尋文字",
+    "shortDescription": "快速取代內容中的文字",
+    "title": "文字取代",
+    "toolInfo": {
+      "description": "使用這個簡單的瀏覽器版工具，輕鬆取代內容中的特定文字。只要輸入你的文字，設定要取代的文字與取代後的值，就能立即取得更新後的版本。",
+      "title": "文字取代"
+    }
+  },
+  "toMorse": {
+    "dashSymbolDescription": "對應摩斯密碼中長音（dash）的符號。",
+    "description": "將文字轉換為摩斯密碼。",
+    "dotSymbolDescription": "對應摩斯密碼中短音（dot）的符號。",
+    "longSignal": "長訊號",
+    "resultTitle": "摩斯密碼",
+    "shortDescription": "快速將文字編碼為摩斯密碼",
+    "shortSignal": "短訊號",
+    "title": "字串轉摩斯密碼"
+  },
+  "truncate": {
+    "addTruncationIndicator": "加入截斷標記",
+    "charactersPlaceholder": "字元數",
+    "description": "將文字縮短到指定的長度。",
+    "indicatorDescription": "加在文字結尾（或開頭）的字元。注意：它們會計入長度。",
+    "inputTitle": "輸入文字",
+    "leftSideDescription": "從文字開頭移除字元。",
+    "leftSideTruncation": "從左側截斷",
+    "lengthAndLines": "長度與行",
+    "lineByLineDescription": "分別截斷每一行。",
+    "lineByLineTruncating": "逐行截斷",
+    "maxLengthDescription": "文字中要保留的字元數。",
+    "numberPlaceholder": "數字",
+    "resultTitle": "截斷後的文字",
+    "rightSideDescription": "從文字結尾移除字元。",
+    "rightSideTruncation": "從右側截斷",
+    "shortDescription": "將文字截斷到指定的長度",
+    "suffixAndAffix": "前綴與後綴",
+    "title": "截斷文字",
+    "toolInfo": {
+      "description": "將文字載入左側的輸入表單，右側就會自動顯示截斷後的文字。",
+      "title": "截斷文字"
+    },
+    "truncationSide": "截斷方向"
+  },
+  "unicode": {
+    "caseOptionsTitle": "大小寫選項",
+    "decode": "解碼",
+    "description": "將文字轉換為 Unicode 跳脫序列，或將其解碼還原為易讀的文字。",
+    "encode": "編碼",
+    "inputTitle": "輸入",
+    "optionsTitle": "模式",
+    "resultTitle": "處理後的輸出",
+    "shortDescription": "使用 Unicode 跳脫序列對文字進行編碼或解碼。",
+    "title": "Unicode 編碼器／解碼器",
+    "toolInfo": {
+      "description": "這個工具可讓你將純文字轉換為 Unicode 跳脫序列（例如 \\uXXXX），也可將 Unicode 跳脫序列解碼還原為標準文字。編碼時，你還可以選擇十六進位輸出要使用大寫或小寫格式。",
+      "title": "Unicode 編碼器／解碼器"
+    },
+    "uppercase": "大寫十六進位"
+  },
+  "uppercase": {
+    "description": "將文字轉換為大寫字母。",
+    "inputTitle": "輸入文字",
+    "resultTitle": "大寫文字",
+    "shortDescription": "將文字轉換為大寫",
+    "title": "轉換為大寫"
+  },
+  "urlDecode": {
+    "inputTitle": "輸入字串（URL 跳脫）",
+    "resultTitle": "輸出字串",
+    "toolInfo": {
+      "description": "載入你的字串後，它會自動進行 URL 反跳脫。",
+      "longDescription": "這個工具可對先前經過 URL 編碼的字串進行 URL 解碼。URL 解碼是 URL 編碼的反向操作。所有百分比編碼的字元都會被解碼為你能看懂的字元。其中最常見的百分比編碼值包括：%20 代表空格、%3a 代表冒號、%2f 代表斜線，以及 %3f 代表問號。百分比符號後面的兩位數字是該字元的字元碼十六進位值。",
+      "shortDescription": "快速對字串進行 URL 反跳脫。",
+      "title": "字串 URL 解碼器"
+    }
+  },
+  "urlEditor": {
+    "addParameter": "新增參數",
+    "credentialsNotSupported": "不支援包含使用者名稱或密碼的 URL。",
+    "delete": "刪除",
+    "deleteParamAriaLabel": "刪除第 {{row}} 列參數",
+    "generatedUrl": "產生的 URL",
+    "hash": "片段",
+    "hashPlaceholder": "section",
+    "host": "主機",
+    "hostPlaceholder": "example.com",
+    "inputTitle": "輸入 URL",
+    "invalidUrl": "無效的 URL",
+    "key": "鍵",
+    "noParameters": "沒有查詢參數",
+    "paramKeyAriaLabel": "參數鍵，第 {{row}} 列",
+    "paramValueAriaLabel": "參數值，第 {{row}} 列",
+    "parseButton": "解析 URL",
+    "path": "路徑",
+    "pathPlaceholder": "search",
+    "protocol": "通訊協定",
+    "queryParameters": "查詢參數",
+    "toolInfo": {
+      "description": "貼上 URL 並點擊「解析 URL」，即可檢視並編輯其組成部分。",
+      "longDescription": "這個工具會將 URL 解析為各個組成部分，並讓你以視覺化方式編輯通訊協定、主機、路徑、片段與查詢參數。變更輸入的 URL 後，請再次點擊「解析 URL」以重新整理解析後的詳細資料。你可以新增、移除或修改任何部分，並複製產生的 URL。不會發出任何伺服器請求。",
+      "shortDescription": "檢視並編輯 URL 的組成部分與查詢參數。",
+      "title": "URL 編輯器"
+    },
+    "urlDetails": "URL 詳細資料",
+    "value": "值"
+  },
+  "urlEncode": {
+    "encodingOption": {
+      "nonSpecialCharDescription": "勾選後，輸入字串中的所有字元都會被轉換為 URL 編碼（而不只是特殊字元）。",
+      "nonSpecialCharPlaceholder": "編碼非特殊字元",
+      "title": "編碼選項"
+    },
+    "inputTitle": "輸入字串（URL 跳脫）",
+    "resultTitle": "輸出字串",
+    "toolInfo": {
+      "description": "載入你的字串後，它會自動進行 URL 跳脫。",
+      "longDescription": "這個工具可對字串進行 URL 編碼。特殊的 URL 字元會被轉換為百分比符號編碼。之所以稱為百分比編碼，是因為每個字元的數值都會被轉換為一個百分比符號，後面接著兩位數的十六進位值。這些十六進位值是依據字元的碼位值決定的。例如，空格會被跳脫為 %20、冒號為 %3a、斜線為 %2f。非特殊字元則維持不變。如果你也需要將非特殊字元轉換為百分比編碼，我們也額外加入了可讓你這麼做的選項。選取「編碼非特殊字元」選項即可啟用此行為。",
+      "shortDescription": "快速對字串進行 URL 跳脫。",
+      "title": "字串 URL 編碼器"
+    }
+  },
+  "bcrypt": {
+    "title": "Bcrypt",
+    "inputTitle": "輸入字串",
+    "resultTitle": "雜湊後的字串",
+    "shortDescription": "使用 Bcrypt 對字串進行雜湊",
+    "description": "使用 Bcrypt 演算法安全地對字串進行雜湊。",
+    "options": {
+      "title": "選項",
+      "saltTitle": "加鹽輪數",
+      "saltDesc": "設定雜湊時使用的加鹽輪數。"
+    },
+    "toolInfo": {
+      "title": "什麼是 Bcrypt？",
+      "longDescription": "Bcrypt 是一種密碼雜湊演算法，專為安全地對密碼與其他敏感字串進行雜湊而設計。加鹽輪數會控制雜湊過程的運算成本。"
+    }
+  }
+}

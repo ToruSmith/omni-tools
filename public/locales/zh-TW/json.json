@@ -1,0 +1,145 @@
+{
+  "comparison": {
+    "description": "比較兩個 JSON 物件，找出結構與值的差異。",
+    "shortDescription": "找出兩個 JSON 物件之間的差異",
+    "title": "比較 JSON"
+  },
+  "escapeJson": {
+    "description": "跳脫 JSON 字串中的特殊字元。將 JSON 資料轉換為正確跳脫的格式，以便安全傳輸或儲存。",
+    "inputTitle": "輸入 JSON",
+    "longDescription": "JSON 跳脫會將 JSON 資料中的特殊字元轉換為跳脫序列，使其能安全地儲存、傳輸，或內嵌在另一個 JSON 文件或程式語言字串中。這個工具會跳脫雙引號、反斜線與換行等字元，同時保留原始的資料結構。當你需要將 JSON 轉換為適合字串的表示形式，用於 API、設定檔、資料庫或原始碼時，就可以使用它。",
+    "resultTitle": "跳脫後的 JSON 字串",
+    "shortDescription": "跳脫 JSON 中的特殊字元",
+    "title": "跳脫 JSON",
+    "wrapOutputDescription": "在跳脫後的 JSON 輸出前後加上雙引號，以建立 JSON 字串。",
+    "wrapOutputTitle": "以引號包住輸出"
+  },
+  "jsonToCsv": {
+    "delimiterOption": "分隔符號",
+    "description": "將 JSON 資料轉換為 CSV 格式。支援巢狀物件與陣列、自動偵測標題列，以及可設定的分隔符號與引號——可直接用於 Excel、Google 試算表或任何試算表應用程式。",
+    "headerOption": "標題列",
+    "inputTitle": "輸入 JSON",
+    "options": {
+      "alwaysQuote": {
+        "description": "無論內容為何，都以雙引號包住每個儲存格。",
+        "label": "一律加上引號"
+      },
+      "autoQuote": {
+        "description": "只為包含分隔符號、雙引號或換行的儲存格加上引號。讓輸出保持簡潔。",
+        "label": "自動（建議）"
+      },
+      "delimiter": "用來分隔每列中各個值的字元（例如逗號、分號、Tab）",
+      "header": {
+        "description": "使用 JSON 的鍵作為第一列的欄位名稱。建議使用，以提升可讀性與匯入相容性。",
+        "label": "包含標題列"
+      }
+    },
+    "outputTitle": "輸出 CSV",
+    "quotingOption": "字串引號",
+    "shortDescription": "將 JSON 轉換為 CSV 格式",
+    "title": "JSON 轉 CSV"
+  },
+  "jsonToXml": {
+    "description": "將 JSON 資料轉換為 XML 格式。將結構化的 JSON 物件轉換為格式正確的 XML 文件。",
+    "inputTitle": "輸入 JSON",
+    "options": {
+      "addMetaTagDesc": "在 XML 輸出的開頭加入中繼標籤",
+      "addMetaTagTitle": "加入 XML 中繼標籤",
+      "indentationTitle": "縮排選項",
+      "metaInfoTitle": "XML 中繼資訊",
+      "noIdentDesc": "輸出不含任何縮排的 XML。",
+      "noIdentTitle": "不縮排",
+      "useSpaceDesc": "使用空格來呈現 XML 的階層結構。",
+      "useSpaceTitle": "使用空格縮排",
+      "useTabDesc": "使用 Tab 來呈現 XML 的階層結構。",
+      "useTabTitle": "使用 Tab 縮排"
+    },
+    "outputTitle": "輸出 XML",
+    "shortDescription": "將 JSON 轉換為 XML 格式",
+    "title": "JSON 轉 XML"
+  },
+  "minify": {
+    "description": "移除 JSON 中所有不必要的空白。",
+    "inputTitle": "輸入 JSON",
+    "resultTitle": "壓縮後的 JSON",
+    "shortDescription": "移除空白以壓縮 JSON",
+    "title": "壓縮 JSON",
+    "toolInfo": {
+      "description": "JSON 壓縮是指在維持有效性的前提下，移除 JSON 資料中所有不必要的空白字元。這包括移除 JSON 在正確解析時不需要的空格、換行與縮排。壓縮可縮小 JSON 資料的大小，讓儲存與傳輸更有效率，同時保持完全相同的資料結構與值。",
+      "title": "什麼是 JSON 壓縮？"
+    }
+  },
+  "prettify": {
+    "description": "以適當的縮排與間距格式化 JSON。",
+    "indentation": "縮排",
+    "inputTitle": "輸入 JSON",
+    "resultTitle": "美化後的 JSON",
+    "shortDescription": "格式化並美化 JSON 程式碼",
+    "title": "美化 JSON",
+    "toolInfo": {
+      "description": "這個工具可讓你以適當的縮排與間距格式化 JSON 資料，讓內容更易讀、更容易處理。",
+      "title": "美化 JSON"
+    },
+    "useSpaces": "使用空格",
+    "useSpacesDescription": "以空格縮排輸出",
+    "useTabs": "使用 Tab",
+    "useTabsDescription": "以 Tab 縮排輸出。"
+  },
+  "sortJson": {
+    "description": "依所選的鍵以遞增或遞減順序整理物件陣列來排序 JSON 資料，或依字母順序排序 JSON 物件的鍵。",
+    "inputTitle": "輸入 JSON",
+    "longDescription": "這個工具可讓你以結構化且可預期的方式輕鬆排序 JSON 資料。你可以依任何鍵排序物件陣列，並選擇遞增或遞減順序，很適合用來整理使用者、產品或紀錄等清單類資料。另外，你也可以依字母順序排序 JSON 物件的鍵，以提升可讀性與一致性。這個工具支援彈性的排序模式，並能處理常見的 JSON 結構，非常適合開發人員、資料分析師，以及任何需要乾淨、有序輸出的 JSON 使用者。",
+    "options": {
+      "ascending": "遞增（A → Z）",
+      "descending": "遞減（Z → A）",
+      "keyDescription": "選擇要用來排序的鍵",
+      "modeDescription": "選擇要依鍵的值排序陣列項目，還是依字母順序排序物件的鍵",
+      "orderDescription": "選擇排序順序",
+      "sortByKey": "依字母順序排序物件的鍵",
+      "sortByValue": "依鍵的值排序陣列",
+      "title": "排序選項"
+    },
+    "resultTitle": "排序後的 JSON",
+    "shortDescription": "依值排序 JSON 陣列，或依字母順序排序物件的鍵",
+    "title": "排序 JSON"
+  },
+  "stringify": {
+    "description": "將 JavaScript 物件轉換為 JSON 字串格式。將資料結構序列化為 JSON 字串，以便儲存或傳輸。",
+    "inputTitle": "JavaScript 物件／陣列",
+    "options": {
+      "escapeHtmlDesc": "將 HTML 特殊字元轉換為其實體參照",
+      "escapeHtmlTitle": "跳脫 HTML 字元",
+      "indentationTitle": "縮排選項",
+      "optionsTitle": "選項",
+      "useSpaceDesc": "以空格縮排輸出",
+      "useSpaceTitle": "使用空格",
+      "useTabDesc": "以 Tab 縮排輸出",
+      "useTabTitle": "使用 Tab 縮排"
+    },
+    "resultTitle": "JSON 字串",
+    "shortDescription": "將物件轉換為 JSON 字串",
+    "title": "JSON 字串化",
+    "toolInfo": {
+      "description": "JSON 字串化是一個將 JavaScript 物件與陣列轉換為 JSON 字串表示形式的工具。它會以可自訂的縮排妥善格式化輸出，並提供跳脫 HTML 特殊字元的選項，讓內容可安全用於網頁。當你需要將資料結構序列化以便儲存或傳輸，或需要準備 JSON 資料以內嵌到 HTML 時，這個工具特別好用。",
+      "title": "什麼是 JSON 字串化？"
+    }
+  },
+  "tsvToJson": {
+    "description": "將 TSV（Tab 分隔值）資料轉換為 JSON 格式。將表格資料轉換為結構化的 JSON 物件。",
+    "shortDescription": "將 TSV 轉換為 JSON 格式",
+    "title": "TSV 轉 JSON"
+  },
+  "validateJson": {
+    "description": "檢查 JSON 是否有效且格式正確。",
+    "inputTitle": "輸入 JSON",
+    "invalidJson": "❌ {{error}}",
+    "resultTitle": "驗證結果",
+    "shortDescription": "驗證 JSON 程式碼是否有錯誤",
+    "title": "驗證 JSON",
+    "toolInfo": {
+      "description": "JSON（JavaScript 物件表示法）是一種輕量級的資料交換格式。JSON 驗證可確保資料結構符合 JSON 標準。有效的 JSON 物件必須具備：- 屬性名稱以雙引號包住。- 大括號 {} 正確配對。- 最後一組鍵值對後面沒有多餘的逗號。- 物件與陣列正確巢狀。這個工具會檢查輸入的 JSON，並提供回饋，協助你找出並修正常見錯誤。",
+      "title": "什麼是 JSON 驗證？"
+    },
+    "validJson": "✅ 有效的 JSON"
+  }
+}

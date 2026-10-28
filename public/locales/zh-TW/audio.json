@@ -1,0 +1,70 @@
+{
+  "changeSpeed": {
+    "description": "更改音訊檔案的播放速度。在保持音高不變的情況下加快或放慢音訊。",
+    "inputTitle": "輸入音訊",
+    "newAudioSpeed": "新的音訊速度",
+    "outputFormat": "輸出格式",
+    "resultTitle": "編輯後的音訊",
+    "settingSpeed": "設定速度",
+    "shortDescription": "更改音訊檔案的速度",
+    "speedDescription": "預設倍率：2 代表兩倍速",
+    "title": "更改音訊速度"
+  },
+  "extractAudio": {
+    "description": "從影片檔案中擷取音軌。",
+    "extractingAudio": "正在擷取音訊",
+    "inputTitle": "輸入影片",
+    "outputFormat": "輸出格式",
+    "outputFormatDescription": "選擇擷取後音訊的格式。",
+    "resultTitle": "擷取的音訊",
+    "shortDescription": "將影片檔案（MP4、MOV 等）中的音訊擷取為 AAC、MP3 或 WAV。",
+    "title": "從影片擷取音訊",
+    "toolInfo": {
+      "description": "這個工具可讓你從影片檔案中擷取音軌。你可以選擇不同的音訊格式，包括 AAC、MP3 和 WAV。",
+      "title": "什麼是{{title}}？"
+    }
+  },
+  "mergeAudio": {
+    "description": "依序串接多個音訊檔案，合併為單一音訊檔案。",
+    "inputTitle": "輸入音訊檔案",
+    "longDescription": "這個工具可讓你依上傳順序串接多個音訊檔案，合併為單一檔案。非常適合用來合併 Podcast 片段、音樂曲目，或任何需要接在一起的音訊檔案。支援多種音訊格式，包括 MP3、AAC 和 WAV。",
+    "outputFormat": "輸出格式",
+    "resultTitle": "合併後的音訊",
+    "shortDescription": "將多個音訊檔案合併為一個（MP3、AAC、WAV）。",
+    "title": "合併音訊",
+    "toolInfo": {
+      "title": "什麼是{{title}}？"
+    }
+  },
+  "trim": {
+    "description": "透過指定開始與結束時間（精確到毫秒以下），剪下並裁剪音訊檔案以擷取特定片段。",
+    "endTime": "結束時間",
+    "endTimeDescription": "結束時間，格式為 HH:MM:SS.mmm（例如 00:01:30.450）",
+    "inputTitle": "輸入音訊",
+    "longDescription": "這個工具可讓你透過指定開始與結束時間（精確到毫秒以下）來剪輯音訊檔案。你可以從較長的音訊檔案中擷取特定片段、移除不需要的部分，或製作較短的音訊片段。支援多種音訊格式，包括 MP3、AAC 和 WAV。非常適合 Podcast 剪輯、音樂製作或任何音訊編輯需求。",
+    "outputFormat": "輸出格式",
+    "resultTitle": "剪輯後的音訊",
+    "shortDescription": "剪輯音訊檔案，以毫秒以下的精確度擷取特定時間片段（MP3、AAC、WAV）。",
+    "startTime": "開始時間",
+    "startTimeDescription": "開始時間，格式為 HH:MM:SS.mmm（例如 00:00:30.820）",
+    "timeSettings": "時間設定",
+    "title": "剪輯音訊",
+    "toolInfo": {
+      "longDescription": "這個工具可讓你透過指定開始與結束時間（精確到毫秒以下）來剪輯音訊檔案。你可以從較長的音訊檔案中擷取特定片段、移除不需要的部分，或製作較短的音訊片段。支援多種音訊格式，包括 MP3、AAC 和 WAV。非常適合 Podcast 剪輯、音樂製作或任何音訊編輯需求。",
+      "title": "什麼是{{title}}？"
+    }
+  },
+  "loop": {
+    "description": "將原始音訊重複多次，建立循環播放的音訊檔案。",
+    "inputTitle": "輸入音訊",
+    "loops": "循環次數",
+    "numberOfLoops": "循環次數",
+    "resultTitle": "循環後的音訊",
+    "shortDescription": "建立循環播放的音訊檔案",
+    "title": "循環音訊",
+    "toolInfo": {
+      "description": "這個工具可讓你將原始音訊重複多次，建立循環播放的音訊檔案。你可以指定音訊要循環幾次。",
+      "title": "什麼是{{title}}？"
+    }
+  }
+}
