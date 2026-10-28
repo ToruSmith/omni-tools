@@ -1,0 +1,223 @@
+{
+  "arithmeticSequence": {
+    "commonDifferenceDescription": "各項之間的公差（d）",
+    "description": "以可自訂的參數產生等差數列。",
+    "firstTermDescription": "數列的第一項（a₁）",
+    "numberOfTermsDescription": "要產生的項數（n）",
+    "outputFormat": "輸出格式",
+    "resultTitle": "產生的數列",
+    "separatorDescription": "各項之間的分隔符號",
+    "sequenceParameters": "數列參數",
+    "shortDescription": "產生等差數列",
+    "title": "等差數列",
+    "toolInfo": {
+      "description": "等差數列是指相鄰兩項之間的差固定不變的數列，這個固定的差稱為公差。只要知道第一項（a₁）與公差（d），將前一項加上公差就能求出每一項。",
+      "title": "什麼是等差數列？"
+    }
+  },
+  "byteConverter": {
+    "description": "在不同的位元組單位之間轉換資料值，支援 SI（十進位）與 IEC（二進位）兩種系統，並支援多行轉換。",
+    "inputTitle": "輸入值",
+    "outputTitle": "轉換後的輸出",
+    "shortDescription": "快速在位元組單位之間轉換數值",
+    "title": "位元組轉換器",
+    "unit": {
+      "from": "選擇你所提供輸入值的單位（例如 KB、MB、GiB）。",
+      "precision": "轉換後輸出要顯示的小數位數。",
+      "title": "轉換選項",
+      "to": "選擇你希望將輸入值轉換成的單位。"
+    }
+  },
+  "generate": {
+    "arithmeticSequenceOption": "等差數列選項",
+    "description": "以可自訂的參數產生一串數字。",
+    "numberOfElementsDescription": "數列中的元素數量。",
+    "resultTitle": "產生的數字",
+    "separator": "分隔符號",
+    "separatorDescription": "以這個字元分隔等差數列中的元素。",
+    "shortDescription": "在指定範圍內產生隨機數字",
+    "startSequenceDescription": "從這個數字開始數列。",
+    "stepDescription": "每個元素增加這個數值",
+    "title": "產生",
+    "toolInfo": {
+      "description": "這個工具可讓你以可自訂的參數產生一串數字。你可以指定起始值、間隔大小與元素數量。",
+      "title": "產生數字"
+    }
+  },
+  "numberToWords": {
+    "description": "將數字轉換為你所選語言的文字。輸出會自動配合你目前的應用程式語言。",
+    "inputTitle": "數字",
+    "options": {
+      "title": "選項",
+      "uppercase": "大寫",
+      "uppercaseDescription": "以大寫顯示轉換後的文字，常用於支票、發票與法律文件。",
+      "useAnd": "包含「and」",
+      "useAndDescription": "在適當的地方插入「and」（例如英文的「One Hundred and Twenty」）。"
+    },
+    "outputTitle": "文字",
+    "shortDescription": "將數字轉換為文字",
+    "title": "數字轉文字",
+    "toolInfo": {
+      "description": "這個工具可將數值轉換為書面形式。輸出會自動依照你目前的應用程式語言，因此不需要額外設定。每行輸入一個數字，即可分別轉換多個數值。",
+      "title": "什麼是數字轉文字轉換器？"
+    }
+  },
+  "ohmsLaw": {
+    "description": "計算電壓、電流與電阻",
+    "longDescription": "這個計算機運用歐姆定律（V = I × R），在已知其中兩個參數時求出第三個電氣參數。歐姆定律是電機工程的基本原理，描述電壓（V）、電流（I）與電阻（R）之間的關係。對於電子愛好者、電機工程師，以及處理電路的學生來說，這個工具能快速求解電路設計中的未知數值，非常實用。",
+    "shortDescription": "運用歐姆定律計算電路中的電壓、電流或電阻",
+    "title": "歐姆定律"
+  },
+  "randomNumberGenerator": {
+    "description": "在指定範圍內產生隨機數字，並可自訂各項選項。",
+    "error": {
+      "generationFailed": "產生隨機數字失敗，請檢查你輸入的參數。"
+    },
+    "info": {
+      "description": "隨機數產生器會在指定範圍內產生無法預測的數字。這個工具使用密碼學安全的亂數產生方式，確保結果真正隨機。適用於模擬、遊戲、統計抽樣與測試情境。",
+      "title": "什麼是隨機數產生器？"
+    },
+    "longDescription": "在指定範圍內產生隨機數字，可選擇整數或小數、允許或避免重複，以及是否排序結果。非常適合用於模擬、測試、遊戲與統計分析。",
+    "options": {
+      "generation": {
+        "allowDecimals": {
+          "description": "產生小數，而不是整數",
+          "title": "允許小數"
+        },
+        "allowDuplicates": {
+          "description": "允許同一個數字出現多次",
+          "title": "允許重複"
+        },
+        "countDescription": "要產生的隨機數字數量（1-10,000）",
+        "sortResults": {
+          "description": "將產生的數字依遞增順序排序",
+          "title": "排序結果"
+        },
+        "title": "產生選項"
+      },
+      "output": {
+        "separatorDescription": "用來分隔產生數字的字元",
+        "title": "輸出設定"
+      },
+      "range": {
+        "maxDescription": "最大值（含）",
+        "minDescription": "最小值（含）",
+        "title": "範圍設定"
+      }
+    },
+    "result": {
+      "count": "數量",
+      "hasDuplicates": "包含重複",
+      "isSorted": "已排序",
+      "range": "範圍",
+      "title": "產生的隨機數字"
+    },
+    "shortDescription": "在自訂範圍內產生隨機數字",
+    "title": "隨機數產生器"
+  },
+  "randomPortGenerator": {
+    "description": "在指定範圍內產生隨機網路連接埠，並可自訂各項選項。",
+    "error": {
+      "generationFailed": "產生隨機連接埠失敗，請檢查你輸入的參數。"
+    },
+    "info": {
+      "description": "隨機連接埠產生器會在指定範圍內產生無法預測的網路連接埠號碼。這個工具遵循 IANA 連接埠號碼標準，並可辨識常見的服務。適用於開發、測試、網路設定，以及避免連接埠衝突。",
+      "title": "什麼是隨機連接埠產生器？"
+    },
+    "longDescription": "在指定範圍（知名、已註冊、動態或自訂）內產生隨機網路連接埠。非常適合用於開發、測試與網路設定，並可辨識常見連接埠所對應的服務。",
+    "options": {
+      "generation": {
+        "allowDuplicates": {
+          "description": "允許同一個連接埠出現多次",
+          "title": "允許重複"
+        },
+        "countDescription": "要產生的隨機連接埠數量（1-1,000）",
+        "sortResults": {
+          "description": "將產生的連接埠依遞增順序排序",
+          "title": "排序結果"
+        },
+        "title": "產生選項"
+      },
+      "output": {
+        "separatorDescription": "用來分隔產生連接埠的字元",
+        "title": "輸出設定"
+      },
+      "range": {
+        "custom": "自訂範圍",
+        "dynamic": "動態連接埠（49152-65535）",
+        "maxPortDescription": "最大連接埠號碼（1-65535）",
+        "minPortDescription": "最小連接埠號碼（1-65535）",
+        "registered": "已註冊連接埠（1024-49151）",
+        "title": "連接埠範圍設定",
+        "wellKnown": "知名連接埠（1-1023）"
+      }
+    },
+    "result": {
+      "count": "數量",
+      "hasDuplicates": "包含重複",
+      "isSorted": "已排序",
+      "portDetails": "連接埠詳細資料",
+      "range": "連接埠範圍",
+      "title": "產生的隨機連接埠"
+    },
+    "shortDescription": "產生隨機網路連接埠",
+    "title": "隨機連接埠產生器"
+  },
+  "slackline": {
+    "description": "計算走繩的張力",
+    "longDescription": "這個計算機假設負載位於繩索中央",
+    "shortDescription": "計算走繩或曬衣繩的大約張力。請勿依賴此結果作為安全依據。",
+    "title": "走繩張力"
+  },
+  "sphereArea": {
+    "description": "球體的表面積",
+    "longDescription": "這個計算機使用公式 A = 4πr² 來計算球體的表面積。你可以輸入半徑來求表面積，也可以輸入表面積來計算所需的半徑。這個工具適合學習幾何的學生、處理球形物體的工程師，以及任何需要計算球面的人。",
+    "shortDescription": "根據半徑計算球體的表面積",
+    "title": "球體表面積"
+  },
+  "sphereVolume": {
+    "description": "球體的體積",
+    "longDescription": "這個計算機使用公式 V = (4/3)πr³ 來計算球體的體積。你可以輸入半徑或直徑來求體積，也可以輸入體積來計算所需的半徑。對於物理、工程與製造等領域中處理球形物體的學生、工程師與專業人士來說，這個工具非常實用。",
+    "shortDescription": "使用半徑或直徑計算球體的體積",
+    "title": "球體體積"
+  },
+  "sum": {
+    "description": "計算一串數字的總和。輸入以逗號或換行分隔的數字，即可得到它們的總和。",
+    "example1Description": "在這個範例中，我們計算十個正整數的總和。這些整數以單欄列出，總和為 19494。",
+    "example1Title": "十個正數的總和",
+    "example2Description": "這個範例將二十個三音節名詞組成的一欄反轉，並由下往上輸出所有單字。為了分隔清單項目，它使用 \\n 字元作為輸入項目分隔符號，也就是每個項目各佔一行。",
+    "example2Title": "計算公園裡的樹",
+    "example3Description": "在這個範例中，我們將九十個不同的值加總——包含正數、負數、整數與小數。我們將輸入分隔符號設為逗號，全部加總後得到的輸出為 0。",
+    "example3Title": "整數與小數的總和",
+    "example4Description": "在這個範例中，我們計算所有十個數字的總和，並啟用「輸出累計總和」選項。這樣就能取得加總過程中的中間值。因此，輸出中會有以下數列：0、1（0 + 1）、3（0 + 1 + 2）、6（0 + 1 + 2 + 3）、10（0 + 1 + 2 + 3 + 4），依此類推。",
+    "example4Title": "數字的累計總和",
+    "extractionTypes": {
+      "delimiter": {
+        "description": "在這裡自訂數字分隔符號。（預設為換行。）",
+        "title": "數字分隔符號"
+      },
+      "smart": {
+        "description": "自動偵測輸入中的數字。",
+        "title": "智慧加總"
+      }
+    },
+    "inputTitle": "輸入",
+    "numberExtraction": "數字擷取",
+    "printRunningSum": "輸出累計總和",
+    "printRunningSumDescription": "逐步顯示計算過程中的總和。",
+    "resultTitle": "總和",
+    "runningSum": "累計總和",
+    "shortDescription": "計算數字的總和",
+    "title": "加總",
+    "toolInfo": {
+      "description": "這是一個線上的瀏覽器版工具，用來計算一堆數字的總和。你可以輸入以逗號、空格或任何其他字元（包括換行）分隔的數字。你也可以直接貼上包含想要加總之數值的一段文字資料，工具會擷取這些數值並求出總和。",
+      "title": "什麼是數字加總計算機？"
+    }
+  },
+  "voltageDropInWire": {
+    "description": "計算雙導線電纜的往返電壓降與功率損耗",
+    "longDescription": "這個計算機可協助判斷雙導線電纜中的電壓降與功率損耗。它會考量電纜長度、線規（截面積）、材料電阻率與電流大小，並計算往返電壓降、電纜的總電阻，以及以熱能形式消耗的功率。在設計電氣系統、確保負載端的電壓維持在可接受範圍內時，這對電機工程師、電工與愛好者特別有用。",
+    "shortDescription": "根據長度、材料與電流計算電纜的電壓降與功率損耗",
+    "title": "電纜往返電壓降"
+  }
+}

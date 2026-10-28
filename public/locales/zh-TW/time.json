@@ -1,0 +1,220 @@
+{
+  "checkLeapYears": {
+    "description": "檢查某一年是否為閏年，並取得閏年資訊。",
+    "exampleDescription": "我們有位朋友出生在閏年的 2 月 29 日，因此她每 4 年才能過一次生日。由於我們永遠記不得她的生日是哪一年，所以用這個程式建立未來閏年的提醒清單。為了列出她接下來的生日，我們在輸入中載入 2025 年到 2040 年的年份序列，並取得每一年的狀態。如果程式顯示該年是閏年，我們就知道會受邀參加 2 月 29 日的生日派對。",
+    "exampleTitle": "找出 2 月 29 日的生日",
+    "inputTitle": "輸入年份",
+    "resultTitle": "閏年結果",
+    "shortDescription": "檢查某一年是否為閏年",
+    "title": "檢查閏年",
+    "toolInfo": {
+      "description": "閏年是指多出一天（2 月 29 日）的年份，用來讓曆年與天文年保持同步。閏年每 4 年出現一次，但能被 100 整除卻不能被 400 整除的年份除外。",
+      "title": "什麼是閏年？"
+    }
+  },
+  "convertDateToUnix": {
+    "description": "將人類可讀的日期轉換為 Unix 時間戳記。",
+    "options": "選項",
+    "outputOptions": "輸出選項",
+    "shortDescription": "將日期轉換為 Unix 時間戳記。",
+    "title": "將日期轉換為 Unix",
+    "toolInfo": {
+      "description": "這個工具可將人類可讀的日期格式（例如 YYYY-MM-DD HH:MM:SS）轉換為 Unix 時間戳記。使用者可以選擇指定 UTC 時差（例如 YYYY-MM-DD HH:MM:SS +XX:XX），或使用本機時區。如果使用者既未提供時差，也未選擇使用本機時區，結果會以 +00:00 的時差呈現。",
+      "title": "將日期轉換為 Unix"
+    },
+    "useLocalTime": "使用本機時間",
+    "useLocalTimeDescription": "輸入的時間與日期會以你瀏覽器的時區處理。其他指定的時差將被忽略。"
+  },
+  "convertDaysToHours": {
+    "addHoursName": "加入小時名稱",
+    "addHoursNameDescription": "在輸出值後附加字串 hours",
+    "description": "將天數轉換為小時，並可自訂各項選項。",
+    "hoursName": "小時名稱",
+    "shortDescription": "將天數轉換為小時",
+    "title": "將天數轉換為小時",
+    "toolInfo": {
+      "description": "這個工具可讓你將天數轉換為小時。你可以輸入純數字或附帶單位的天數，工具會將它們轉換為小時。你也可以選擇在輸出值後附加「hours」後綴。",
+      "title": "將天數轉換為小時"
+    }
+  },
+  "convertHoursToDays": {
+    "addDaysName": "加入天數名稱",
+    "addDaysNameDescription": "在輸出值後附加字串 days",
+    "daysName": "天數名稱",
+    "description": "將小時轉換為天數，並可自訂各項選項。",
+    "shortDescription": "將小時轉換為天數",
+    "title": "將小時轉換為天數",
+    "toolInfo": {
+      "description": "這個工具可讓你將小時轉換為天數。你可以輸入純數字或附帶單位的小時數，工具會將它們轉換為天數。你也可以選擇在輸出值後附加「days」後綴。",
+      "title": "將小時轉換為天數"
+    }
+  },
+  "convertSecondsToTime": {
+    "addPadding": "補零",
+    "addPaddingDescription": "為小時、分鐘與秒數補上前導零。",
+    "description": "將秒數轉換為易讀的時間格式（時:分:秒）。輸入秒數即可取得格式化後的時間。",
+    "shortDescription": "將秒數轉換為時間格式",
+    "timePadding": "時間補零",
+    "title": "將秒數轉換為時間",
+    "toolInfo": {
+      "title": "什麼是{{title}}？"
+    }
+  },
+  "convertTimeToDecimal": {
+    "description": "將格式化的時間長度（HH:MM:SS）轉換為十進位的小時數值。",
+    "longDescription": "將格式化的時間字串（HH:MM:SS 或 HH:MM）轉換為對應的十進位小時數。小時可以是任何正數，分鐘與秒數則接受 0-59 的值，且可以是一位數或兩位數（例如「12:5」或「12:05」）。這個功能會解讀小時、分鐘與秒數，再將總時長計算為單一的十進位數值。對於生產力追蹤、薪資計算、依時間計費、資料分析，或任何需要將人類可讀的時間轉換為便於加總、比較或處理的數值格式的工作流程來說都很實用。例如，「03:26:00」會變成 3.43 小時，「12:5」會變成 12.08 小時。",
+    "shortDescription": "將人類可讀的時間轉換為十進位時間",
+    "title": "將時間轉換為十進位"
+  },
+  "convertTimeToSeconds": {
+    "description": "將格式化的時間（HH:MM:SS）轉換為秒數。",
+    "inputTitle": "輸入時間",
+    "resultTitle": "秒數",
+    "shortDescription": "將時間格式轉換為秒數",
+    "title": "將時間轉換為秒數",
+    "toolInfo": {
+      "description": "這個工具可讓你將格式化的時間字串（HH:MM:SS）轉換為秒數。對於計算時間長度與時間間隔很有幫助。",
+      "title": "將時間轉換為秒數"
+    }
+  },
+  "convertUnixToDate": {
+    "addUtcLabel": "加入「UTC」後綴",
+    "addUtcLabelDescription": "在轉換後的日期後面附加「UTC」（僅適用於 UTC 模式）",
+    "date-to-unix": "日期 → Unix",
+    "description": "將 Unix 時間戳記轉換為易讀的日期，也可將日期轉換回 Unix 時間戳記。",
+    "optionsTitle": "轉換模式",
+    "shortDescription": "雙向轉換 Unix 時間戳記與日期。",
+    "title": "轉換 Unix ↔ 日期",
+    "toolInfo": {
+      "description": "這個工具可將 Unix 時間戳記（以秒為單位）轉換為人類可讀的日期格式（例如 YYYY-MM-DD HH:MM:SS），也可將格式化的日期轉換回 Unix 時間戳記。你可以選擇輸出 UTC、輸出本機時區，或提供自訂的 UTC 時差（例如：YYYY-MM-DD HH:MM:SS +XX:XX）。如果未提供時差，且未選擇本機時區，預設會使用 UTC（+00:00）。",
+      "title": "轉換 Unix ↔ 日期"
+    },
+    "tzOptions": "時區選項",
+    "unix-to-date": "Unix → 日期",
+    "useLocalTime": "使用本機時間",
+    "useLocalTimeDescription": "以你的本機時區而非 UTC 顯示轉換後的日期",
+    "useUTC": "使用 UTC"
+  },
+  "crontabGuru": {
+    "description": "解析 Cron 運算式並以白話文說明。立即了解任何 Cron 排程的作用、驗證語法，並可一次處理多個運算式。",
+    "longDescription": "Crontab Guru 是一個 Cron 運算式解析器與驗證器，能將複雜的 Cron 語法轉譯為淺顯易懂、人類可讀的說明。無論你是在排程自動備份、系統維護作業或 CI/CD 管線，這個工具都能幫你確切了解工作何時會執行。支援標準的 5 欄位 Cron 運算式、即時驗證語法，並可一次處理多個運算式——每行一個。支援英文、法文、西班牙文、德文、日文、中文、葡萄牙文、荷蘭文與俄文。",
+    "shortDescription": "解析 Cron 運算式並以白話文說明",
+    "title": "Crontab Guru"
+  },
+  "dateWeekdayCalculator": {
+    "dateSelection": "日期",
+    "dayDescription": "日",
+    "description": "找出在某個年份範圍內，指定的月份與日期剛好落在所選星期幾的每一年。",
+    "endYearDescription": "結束年份",
+    "errors": {
+      "emptyInput": "所有欄位皆為必填",
+      "fallback": "輸入無效",
+      "invalidDate": "所選的月份沒有這一天",
+      "invalidDay": "日期必須介於 1 到 31 之間",
+      "invalidMonth": "月份必須介於 1 到 12 之間",
+      "invalidWeekday": "無效的星期",
+      "invalidYear": "年份必須是介於 1 到 9999 之間的整數",
+      "invalidYearRange": "起始年份必須小於或等於結束年份"
+    },
+    "foundMatches_other": "找到 {{count}} 個符合的年份",
+    "longDescription": "選擇月份、日期與目標星期，再選擇起始與結束年份。計算機會掃描範圍內的每一年，並將每個符合的結果以完整格式的日期列出。支援 2 月 29 日：非閏年會自動略過。無效的日期（例如 4 月 31 日）與無效的年份範圍會顯示清楚的錯誤訊息。",
+    "monthDescription": "月",
+    "months": {
+      "1": "一月",
+      "2": "二月",
+      "3": "三月",
+      "4": "四月",
+      "5": "五月",
+      "6": "六月",
+      "7": "七月",
+      "8": "八月",
+      "9": "九月",
+      "10": "十月",
+      "11": "十一月",
+      "12": "十二月"
+    },
+    "noMatches": "在所選範圍內找不到符合的年份。",
+    "resultTitle": "符合的年份",
+    "shortDescription": "找出某個日期剛好落在指定星期幾的年份",
+    "startYearDescription": "起始年份",
+    "title": "日期星期計算機",
+    "toolInfo": {
+      "title": "什麼是{{title}}？"
+    },
+    "weekdayDescription": "目標星期",
+    "weekdaySelection": "星期",
+    "weekdays": {
+      "friday": "星期五",
+      "monday": "星期一",
+      "saturday": "星期六",
+      "sunday": "星期日",
+      "thursday": "星期四",
+      "tuesday": "星期二",
+      "wednesday": "星期三"
+    },
+    "yearRange": "年份範圍"
+  },
+  "discordTimestamp": {
+    "description": "將日期與時間轉換為 Discord 專用的時間戳記格式，會自動配合每位使用者的本機時區與語言",
+    "formats": {
+      "description": "選擇時間戳記在 Discord 中的顯示方式——將游標移到各選項上即可查看範例",
+      "long_date": "完整日期（例：2025年1月1日）",
+      "long_datetime": "完整日期與時間（例：2025年1月1日 星期三 14:30）",
+      "long_time": "完整時間（例：14:30:00）",
+      "relative": "相對時間（例：2 小時前）",
+      "short_date": "簡短日期（例：2025/01/01）",
+      "short_datetime": "簡短日期與時間（例：2025年1月1日 14:30）",
+      "short_time": "簡短時間（例：14:30）",
+      "title": "時間戳記格式"
+    },
+    "inputTitle": "輸入日期時間",
+    "name": "Discord 時間戳記產生器",
+    "outputTitle": "Discord 時間戳記",
+    "shortDescription": "根據日期產生 Discord 時間戳記",
+    "toolInfo": {
+      "description": "Discord 時間戳記是一種特殊語法，可動態顯示日期與時間。它不會顯示固定的時間，而是自動轉換為每位檢視者的本機時區與語言——讓每個人都能看到符合自己所在地的正確時間。只要每行輸入一個日期時間、選擇格式，然後將結果直接貼到 Discord 即可。工具會獨立處理每一行——空白行會保留在輸出中，無效的行會以 ❌ 標記，有效的日期時間則會立即轉換。啟用 UTC 模式可確保無論你的本機時區為何，結果都保持一致。",
+      "title": "什麼是 Discord 時間戳記？"
+    },
+    "utc": {
+      "description": "將輸入的日期時間視為 UTC。停用後則改用你的本機時區",
+      "label": "強制使用 UTC",
+      "title": "輸入選項"
+    }
+  },
+  "timeBetweenDates": {
+    "description": "計算兩個日期之間的時間差。取得以天、小時、分鐘與秒為單位的精確時間長度。",
+    "endDate": "結束日期",
+    "endDateTime": "結束日期與時間",
+    "endTime": "結束時間",
+    "endTimezone": "結束時區",
+    "shortDescription": "計算兩個日期之間的時間",
+    "startDate": "開始日期",
+    "startDateTime": "開始日期與時間",
+    "startTime": "開始時間",
+    "startTimezone": "開始時區",
+    "title": "日期間隔時間",
+    "toolInfo": {
+      "description": "計算兩個日期與時間之間的精確時間差，並支援不同的時區。這個工具會以多種單位（年、月、日、小時、分鐘與秒）詳細列出時間差的細項。",
+      "title": "日期間隔時間計算機"
+    }
+  },
+  "truncateClockTime": {
+    "description": "截斷時鐘時間以移除秒或分鐘。可將時間四捨五入到最接近的小時、分鐘或自訂間隔。",
+    "printDroppedComponents": "顯示被捨棄的部分",
+    "shortDescription": "將時鐘時間截斷到指定的精確度",
+    "timePadding": "時間補零",
+    "title": "截斷時鐘時間",
+    "toolInfo": {
+      "title": "什麼是{{title}}？"
+    },
+    "truncateMinutesAndSeconds": "截斷分鐘與秒",
+    "truncateMinutesAndSecondsDescription": "同時捨棄每個時鐘時間中的分鐘與秒數部分。",
+    "truncateOnlySeconds": "只截斷秒",
+    "truncateOnlySecondsDescription": "捨棄每個時鐘時間中的秒數部分。",
+    "truncationSide": "截斷方式",
+    "useZeroPadding": "使用補零",
+    "zeroPaddingDescription": "讓所有時間部分永遠都是兩位數。",
+    "zeroPrintDescription": "將被捨棄的部分以零值「00」顯示。",
+    "zeroPrintTruncatedParts": "以零顯示被截斷的部分"
+  }
+}

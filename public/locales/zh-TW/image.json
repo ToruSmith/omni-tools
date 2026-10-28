@@ -1,0 +1,392 @@
+{
+  "changeColors": {
+    "description": "選擇來源顏色並以新顏色取代，更改圖片中的特定顏色。",
+    "fromColor": {
+      "colorOption": "取代特定顏色",
+      "selectorDescription": "取代這個顏色（來源顏色）",
+      "similarityDescription": "比對與來源顏色相近的顏色，範圍為這個百分比。例如 10% 的白色會比對到白色與少量的灰色。",
+      "title": "來源顏色",
+      "transparentOption": "取代透明像素"
+    },
+    "inputTitle": "輸入圖片",
+    "resultTitle": "結果圖片",
+    "shortDescription": "快速替換圖片中的顏色",
+    "title": "更改圖片顏色",
+    "toColor": {
+      "colorOption": "以特定顏色取代",
+      "selectorDescription": "取代為這個顏色（目標顏色）",
+      "title": "目標顏色",
+      "transparentOption": "以透明取代"
+    }
+  },
+  "changeOpacity": {
+    "description": "輕鬆調整圖片的透明度。只要上傳圖片，使用滑桿設定 0（完全透明）到 1（完全不透明）之間的不透明度，再下載修改後的圖片。",
+    "shortDescription": "調整圖片的透明度",
+    "title": "更改圖片不透明度",
+    "inputTitle": "輸入圖片",
+    "resultTitle": "處理後的圖片",
+    "options": {
+      "opacitySettings": "不透明度設定",
+      "opacityDescription": "設定 0（透明）到 1（不透明）之間的不透明度",
+      "solidOpacityTitle": "套用單一不透明度",
+      "solidOpacityDescription": "為所有像素設定相同的不透明度",
+      "gradientOpacityTitle": "套用漸層不透明度",
+      "gradientOpacityDescription": "以漸層方式改變不透明度",
+      "gradientType": "漸層類型",
+      "linearOpacity": "線性不透明度",
+      "radialOpacity": "放射狀不透明度",
+      "opacityArea": "不透明度區域",
+      "leftPosition": "左側位置",
+      "topPosition": "上方位置",
+      "width": "寬度",
+      "height": "高度",
+      "backgroundOptions": "背景選項",
+      "transparentAlpha": "透明（Alpha）",
+      "transparentAlphaDescription": "保留圖片的透明度（預設）",
+      "solidColor": "純色",
+      "solidColorDescription": "將圖片合成到純色背景上",
+      "chooseBackgroundColor": "選擇背景顏色",
+      "insideOut": "由內向外",
+      "outsideIn": "由外向內",
+      "gradientDirection": "漸層方向"
+    }
+  },
+  "compress": {
+    "compressedSize": "壓縮後總大小",
+    "compressing": "正在壓縮圖片…",
+    "compressionOptions": "壓縮選項",
+    "description": "在保留視覺品質的同時縮小一張或多張圖片的檔案大小。可一次上傳一批圖片，並以 ZIP 壓縮檔一次下載全部。",
+    "failedToCompress": "圖片壓縮失敗，請再試一次。",
+    "fileSizes": "檔案大小",
+    "inputTitle": "圖片輸入",
+    "maxFileSizeDescription": "每張圖片的輸出檔案大小上限（單位為 MB）",
+    "originalSize": "原始總大小",
+    "qualityDescription": "圖片品質百分比——數值越低，檔案越小",
+    "resultTitle": "壓縮後的圖片",
+    "shortDescription": "一次壓縮一張或多張圖片。",
+    "someFailedToCompress": "部分圖片無法壓縮，已被略過。",
+    "title": "壓縮圖片"
+  },
+  "compressPng": {
+    "alreadyOptimized": "這個 PNG 已經比我們能產生的結果還小，因此維持原樣。",
+    "alreadyOptimizedFiles": "已經比我們能產生的結果還小，維持原樣：{{files}}",
+    "colors": "調色盤中的顏色數",
+    "compressedSize": "壓縮後大小",
+    "compressing": "正在壓縮 PNG…",
+    "compressionOptions": "壓縮選項",
+    "description": "這個程式可壓縮一張或多張 PNG 圖片，而且完全不會調整圖片尺寸。只要將 PNG 圖片加入輸入區，程式就會縮減它們的調色盤並重新編碼，因此每個輸出都會保留與輸入完全相同的寬度與高度。在選項中，你可以調整壓縮等級、指定輸出大小上限，並查看圖片壓縮前後的檔案大小。",
+    "dimensions": "尺寸",
+    "dimensionsUnchanged": "（未變更）",
+    "dithering": "色彩抖動",
+    "ditheringDescription": "將色彩誤差分散到相鄰像素，以隱藏漸層中的色帶，但檔案會變大",
+    "failed": "無法壓縮這個 PNG，請再試一次。",
+    "fileSizes": "檔案大小",
+    "inputTitle": "輸入 PNG",
+    "maxOutputSizeDescription": "輸出大小上限（單位為 KB）。調色盤會一直縮減，直到 PNG 符合上限。輸入 0 代表不設限",
+    "noStatsYet": "上傳 PNG 即可查看節省了多少空間",
+    "originalSize": "原始大小",
+    "qualityDescription": "品質百分比（1-100）——數值越低，保留的顏色越少，檔案也越小",
+    "resultTitle": "壓縮後的 PNG",
+    "shortDescription": "快速壓縮 PNG",
+    "someFailed": "這些檔案無法壓縮：{{files}}",
+    "targetNotReached": "即使使用最小的調色盤，仍無法達到輸出大小上限。圖片已盡可能壓縮。",
+    "targetNotReachedFiles": "以下檔案無法達到輸出大小上限：{{files}}。它們已盡可能壓縮。",
+    "title": "壓縮 PNG"
+  },
+  "convertJgpToPng": {
+    "description": "快速將你的 JPG 圖片轉換為 PNG。只要將圖片匯入左側的編輯器即可",
+    "shortDescription": "快速將你的 JPG 圖片轉換為 PNG",
+    "title": "將 JPG 轉換為 PNG"
+  },
+  "createTransparent": {
+    "description": "移除所選的背景顏色，建立圖片的透明版本。",
+    "shortDescription": "快速讓圖片變透明",
+    "title": "建立透明 PNG"
+  },
+  "crop": {
+    "description": "裁切圖片以移除不需要的區域。",
+    "inputTitle": "輸入圖片",
+    "resultTitle": "裁切後的圖片",
+    "shortDescription": "快速裁切圖片。",
+    "title": "裁切圖片"
+  },
+  "editor": {
+    "description": "進階圖片編輯器，具備裁切、旋轉、註解、調整色彩與加入浮水印的工具。直接在瀏覽器中使用專業級工具編輯你的圖片。",
+    "shortDescription": "使用進階工具與功能編輯圖片",
+    "title": "圖片編輯器"
+  },
+  "imageToText": {
+    "description": "使用光學字元辨識（OCR）從圖片（JPG、PNG）中擷取文字。",
+    "shortDescription": "使用 OCR 從圖片中擷取文字。",
+    "title": "圖片轉文字（OCR）"
+  },
+  "qrCode": {
+    "description": "為不同的資料類型產生 QR Code：URL、文字、電子郵件、電話、簡訊、WiFi、vCard 等等。",
+    "groups": {
+      "details": {
+        "email": {
+          "address": {
+            "description": "電子郵件地址",
+            "placeholder": "example@example.com"
+          },
+          "body": {
+            "description": "電子郵件內文（選填）",
+            "placeholder": "內文"
+          },
+          "subject": {
+            "description": "電子郵件主旨（選填）",
+            "placeholder": "主旨"
+          }
+        },
+        "phone": {
+          "description": "電話號碼",
+          "placeholder": "+1234567890"
+        },
+        "sms": {
+          "message": {
+            "description": "訊息（選填）",
+            "placeholder": "在這裡輸入你的訊息"
+          },
+          "number": {
+            "description": "電話號碼",
+            "placeholder": "+1234567890"
+          }
+        },
+        "text": {
+          "description": "輸入文字",
+          "placeholder": "在這裡輸入你的文字"
+        },
+        "title": "{{type}}詳細資料",
+        "url": {
+          "description": "輸入 URL",
+          "placeholder": "https://example.com"
+        },
+        "vcard": {
+          "address": {
+            "description": "地址",
+            "placeholder": "台北市信義區市府路 1 號"
+          },
+          "company": {
+            "description": "公司（選填）",
+            "placeholder": "公司名稱"
+          },
+          "email": {
+            "description": "電子郵件",
+            "placeholder": "john@example.com"
+          },
+          "name": {
+            "description": "全名",
+            "placeholder": "王小明"
+          },
+          "phone": {
+            "description": "電話",
+            "placeholder": "+1234567890"
+          },
+          "title": {
+            "description": "職稱（選填）",
+            "placeholder": "軟體工程師"
+          },
+          "website": {
+            "description": "網站（選填）",
+            "placeholder": "https://example.com"
+          }
+        },
+        "wifi": {
+          "encryption": {
+            "label": "加密類型",
+            "options": {
+              "none": "無",
+              "wep": "WEP",
+              "wpa": "WPA"
+            }
+          },
+          "password": {
+            "description": "密碼",
+            "placeholder": "密碼"
+          },
+          "ssid": {
+            "description": "網路名稱（SSID）",
+            "placeholder": "網路名稱"
+          }
+        }
+      },
+      "settings": {
+        "bgColor": "背景顏色",
+        "correctionLevel": {
+          "helperText": "等級越高，越能承受損壞，但可編碼的資料量越少",
+          "label": "錯誤更正等級",
+          "options": {
+            "h": "H（約 30%）",
+            "l": "L（約 7%）",
+            "m": "M（約 15%）",
+            "q": "Q（約 25%）"
+          }
+        },
+        "fgColor": "前景顏色",
+        "size": {
+          "description": "大小（像素，100-1000）"
+        },
+        "title": "QR Code 設定"
+      },
+      "type": {
+        "label": "選擇 QR Code 類型",
+        "options": {
+          "email": "電子郵件",
+          "phone": "電話",
+          "sms": "簡訊",
+          "text": "文字",
+          "url": "URL",
+          "vcard": "vCard（聯絡人）",
+          "wifi": "WiFi"
+        },
+        "title": "QR Code 類型"
+      }
+    },
+    "longDescription": "為不同的資料類型產生 QR Code：URL、文字、電子郵件、電話、簡訊、WiFi、vCard 等等。自訂大小與顏色，打造最符合需求的 QR Code。",
+    "options": {
+      "address": "地址",
+      "company": "公司（選填）",
+      "email": "電子郵件",
+      "emailBody": "電子郵件內文（選填）",
+      "emailSubject": "電子郵件主旨（選填）",
+      "encryptionType": "加密類型",
+      "fullName": "全名",
+      "job": "職稱（選填）",
+      "message": "訊息（選填）",
+      "name": "名稱",
+      "password": "密碼",
+      "phone": "電話號碼",
+      "qrType": "選擇 QR Code 類型",
+      "size": "大小（像素，100-1000）",
+      "ssid": "網路名稱（SSID）",
+      "text": "輸入文字",
+      "url": "輸入 URL",
+      "website": "網站（選填）"
+    },
+    "result": {
+      "title": "產生的 QR Code"
+    },
+    "resultOutput": "產生的 QR Code",
+    "shortDescription": "為各種資料格式建立自訂的 QR Code。",
+    "title": "QR Code 產生器"
+  },
+  "removeBackground": {
+    "description": "移除圖片背景，以透明方式突顯主體。",
+    "shortDescription": "自動移除圖片背景",
+    "title": "移除圖片背景"
+  },
+  "resize": {
+    "description": "以像素尺寸或百分比縮放調整圖片大小。可維持長寬比，並設定寬度或高度讓另一邊自動調整。可個別下載結果，或下載為 ZIP 壓縮檔。",
+    "dimensionType": "尺寸類型",
+    "heightDescription": "高度（以像素為單位）",
+    "inputTitle": "輸入圖片",
+    "maintainAspectRatio": "維持長寬比",
+    "maintainAspectRatioDescription": "維持圖片原始的長寬比。",
+    "percentage": "百分比",
+    "percentageDescription": "原始大小的百分比（例如 50 代表一半大小，200 代表兩倍大小）",
+    "resizeByPercentage": "依百分比調整大小",
+    "resizeByPercentageDescription": "指定原始大小的百分比來調整大小。",
+    "resizeByPixels": "依像素調整大小",
+    "resizeByPixelsDescription": "指定像素尺寸來調整大小。",
+    "resizeMethod": "調整大小的方式",
+    "resultTitle": "調整大小後的圖片",
+    "setHeight": "設定高度",
+    "setHeightDescription": "指定高度（像素），並依長寬比計算寬度。",
+    "setWidth": "設定寬度",
+    "setWidthDescription": "指定寬度（像素），並依長寬比計算高度。",
+    "shortDescription": "一次調整一張或多張圖片的大小。",
+    "title": "調整圖片大小",
+    "toolInfo": {
+      "description": "這個工具可讓你一次調整一張或多張 JPG、PNG、SVG 或 GIF 圖片的大小。你可以上傳單張圖片或一批圖片，並以像素尺寸或百分比指定大小，也可選擇維持原始長寬比。處理多張圖片時，結果會打包成 ZIP 檔案，方便下載。",
+      "title": "調整圖片大小"
+    },
+    "widthDescription": "寬度（以像素為單位）"
+  },
+  "rotate": {
+    "description": "將圖片旋轉指定的角度。",
+    "inputTitle": "輸入圖片",
+    "options": {
+      "angle": "角度",
+      "customDesc": "以自訂的角度（度）旋轉。",
+      "customTitle": "自訂角度",
+      "method": "旋轉方式",
+      "presetDesc": "以特定的角度（度）旋轉。",
+      "presetTitle": "預設角度"
+    },
+    "resultTitle": "旋轉後的圖片",
+    "shortDescription": "輕鬆旋轉圖片。",
+    "title": "旋轉圖片"
+  },
+  "split": {
+    "description": "依所選的紙張格式與邊距，將地圖或大型圖片分割成多個頁面。指定每個列印方格的像素數與方格數量，即可正確縮放圖片。",
+    "inputTitle": "輸入圖片",
+    "loadingText": "載入中…可能需要一點時間。",
+    "pageParameters": {
+      "padding": {
+        "description": "每頁地圖周圍的邊距（以所選單位為準）",
+        "label": "邊距"
+      },
+      "selectPageFormat": "選擇頁面格式",
+      "title": "頁面參數"
+    },
+    "resultTitle": "分割後的 PDF",
+    "scaleParameters": {
+      "pxPerSquareQuantity": {
+        "description": "原始圖片上，指定數量的方格（水平或垂直）所對應的像素數",
+        "label": "方格數量對應的像素數"
+      },
+      "squareQuantity": {
+        "description": "用於縮放的橫向（水平或垂直）遊戲方格數量",
+        "label": "方格數量"
+      },
+      "title": "縮放參數",
+      "unitsPerOneSquare": {
+        "description": "所選單位下，單一方格的實際尺寸",
+        "label": "每個方格的單位數"
+      }
+    },
+    "shortDescription": "將大型圖片分割成多個頁面（PDF）。",
+    "title": "將圖片分割成頁面",
+    "units": {
+      "options": {
+        "in": "英吋（in）",
+        "mm": "公釐（mm）",
+        "pt": "點（pt）"
+      },
+      "select": "選擇測量單位",
+      "title": "單位"
+    }
+  },
+  "watermark": {
+    "description": "使用每個檔名或自訂文字，為一張或多張圖片加入文字浮水印。",
+    "failedToProcess": "無法為一張或多張圖片加上浮水印，請再試一次。",
+    "inputTitle": "輸入圖片",
+    "options": {
+      "color": "浮水印顏色。",
+      "customStringWatermarkDesc": "對每張圖片套用相同的自訂文字。",
+      "customStringWatermarkTitle": "使用自訂浮水印",
+      "filenameWatermarkDesc": "使用每張圖片的檔名作為浮水印。",
+      "filenameWatermarkTitle": "使用檔名",
+      "fontSize": "字型大小。",
+      "opacity": "浮水印透明度。",
+      "position": {
+        "bottomLeft": "左下",
+        "bottomRight": "右下",
+        "center": "置中",
+        "topLeft": "左上",
+        "topRight": "右上"
+      },
+      "positionTitle": "位置",
+      "styleTitle": "樣式",
+      "watermark": "浮水印文字。",
+      "watermarkTitle": "來源"
+    },
+    "outputTitle": "加上浮水印的圖片",
+    "shortDescription": "為圖片加入文字浮水印",
+    "title": "為圖片加上浮水印",
+    "toolInfo": {
+      "longDescription": "圖片浮水印工具可讓你為一張或多張圖片加入可自訂的文字浮水印。你可以自動使用每張圖片的檔名作為浮水印，或對每張圖片套用相同的自訂文字。浮水印有助於保護你的作品、標示所有權、推廣你的品牌，以及整理圖片集。可自訂字型大小、不透明度、顏色與位置，同時保留原始圖片品質。",
+      "title": "什麼是圖片浮水印？"
+    }
+  }
+}

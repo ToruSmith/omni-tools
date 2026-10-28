@@ -1,0 +1,34 @@
+# 繁體中文語系檢查：你在網頁編輯器改 public/locales/** 時自動跑，
+# 確保 JSON 格式正確、{{變數}} 沒被改壞。
+# 「缺少翻譯」只會列在 Summary 裡提醒，不會讓檢查失敗（沒翻的字串會顯示英文，不影響網站運作）。
+#
+# 注意：同步上游用的 PR（upstream-sync 分支）不在這裡跑；
+# 那個 PR 的檢查由 sync-upstream.yml 負責，且腳本一律來自你自己的預設分支。
+name: 繁中語系檢查
+
+on:
+  pull_request:
+    paths:
+      - 'public/locales/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: zh-TW 語系檢查
+    if: github.head_ref != 'upstream-sync'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          persist-credentials: false
+
+      - name: 檢查翻譯
+        run: |
+          set -euo pipefail
+          node scripts/fork/i18n-check.mjs --out i18n.md --fail-on-invalid || STATUS=$?
+          cat i18n.md >> "$GITHUB_STEP_SUMMARY"
+          exit "${STATUS:-0}"

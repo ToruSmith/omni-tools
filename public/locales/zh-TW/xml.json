@@ -1,0 +1,43 @@
+{
+  "xmlBeautifier": {
+    "description": "以適當的縮排與間距格式化 XML。",
+    "indentation": "縮排",
+    "inputTitle": "輸入 XML",
+    "resultTitle": "美化後的 XML",
+    "shortDescription": "格式化並美化 XML 程式碼",
+    "title": "XML 美化器",
+    "options": {
+      "title": "選項",
+      "preserveAttributesTitle": "保留屬性",
+      "preserveAttributesDesc": "保留原始 XML 屬性的格式與順序。"
+    },
+    "toolInfo": {
+      "description": "這個工具可讓你以適當的縮排與間距格式化 XML 資料，讓內容更易讀、更容易處理。",
+      "title": "XML 美化器"
+    },
+    "useSpaces": "使用空格",
+    "useSpacesDescription": "以空格縮排輸出",
+    "useTabs": "使用 Tab",
+    "useTabsDescription": "以 Tab 縮排輸出。"
+  },
+  "xmlValidator": {
+    "description": "驗證 XML 的語法與結構。",
+    "placeholder": "在這裡貼上或匯入 XML…",
+    "shortDescription": "驗證 XML 程式碼是否有錯誤",
+    "title": "XML 驗證器",
+    "toolInfo": {
+      "description": "這個工具可讓你驗證 XML 的語法與結構。它會檢查 XML 是否格式正確，並針對發現的問題提供詳細的錯誤訊息。",
+      "title": "XML 驗證器"
+    }
+  },
+  "xmlViewer": {
+    "description": "以樹狀格式檢視並瀏覽 XML 結構。",
+    "inputTitle": "輸入 XML",
+    "resultTitle": "XML 樹狀檢視",
+    "title": "XML 檢視器",
+    "toolInfo": {
+      "description": "這個工具可讓你以階層式樹狀格式檢視 XML 資料，更容易瀏覽並理解 XML 文件的結構。",
+      "title": "XML 檢視器"
+    }
+  }
+}

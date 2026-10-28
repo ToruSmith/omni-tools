@@ -1,0 +1,125 @@
+{
+  "changeCsvSeparator": {
+    "description": "更改 CSV 檔案中的分隔符號。可在逗號、分號、Tab 或自訂分隔符號等不同 CSV 格式之間轉換。",
+    "shortDescription": "更改 CSV 檔案的分隔符號",
+    "title": "更改 CSV 分隔符號"
+  },
+  "csvRowsToColumns": {
+    "description": "這個工具可將 CSV（逗號分隔值）檔案的資料列轉換為欄位。它會逐一擷取輸入 CSV 中的水平列，旋轉 90 度後，以垂直欄的形式依序輸出，並以逗號分隔。",
+    "longDescription": "這個工具可將 CSV（逗號分隔值）檔案的資料列轉換為欄位。例如，如果輸入的 CSV 資料有 6 列，輸出就會有 6 欄，且各列的元素會由上到下排列。在格式正確的 CSV 中，每一列的值數量都相同。但如果有些列缺少欄位，程式可以修正，你可以從現有選項中選擇：以空白元素補齊缺漏的資料，或以自訂元素（例如「missing」、「?」或「x」）取代缺漏的資料。轉換過程中，工具也會清除 CSV 檔案中不必要的資訊，例如空白行（沒有可見內容的行）與註解。為了讓工具正確辨識註解，你可以在選項中指定註解行開頭的符號，通常是井字號「#」或雙斜線「//」。CSV 超好用！",
+    "shortDescription": "將 CSV 資料列轉換為欄位。",
+    "title": "將 CSV 資料列轉換為欄位"
+  },
+  "csvToJson": {
+    "columnSeparator": "欄位分隔符號（例如 , ; \\t）",
+    "commentSymbol": "註解符號（例如 #）",
+    "conversionOptions": "轉換選項",
+    "description": "將 CSV 檔案轉換為 JSON 格式，並可自訂分隔符號、引號與輸出格式等選項。支援標題列、註解與動態型別轉換。",
+    "dynamicTypes": "動態型別",
+    "dynamicTypesDescription": "自動轉換數字與布林值",
+    "error": "錯誤",
+    "errorParsing": "解析 CSV 時發生錯誤：{{error}}",
+    "fieldQuote": "欄位引號（例如 \"）",
+    "inputCsvFormat": "輸入 CSV 格式",
+    "inputTitle": "輸入 CSV",
+    "invalidCsvFormat": "無效的 CSV 格式",
+    "resultTitle": "輸出 JSON",
+    "shortDescription": "將 CSV 資料轉換為 JSON 格式。",
+    "skipEmptyLines": "略過空白行",
+    "skipEmptyLinesDescription": "忽略輸入 CSV 中的空白行",
+    "title": "將 CSV 轉換為 JSON",
+    "toolInfo": {
+      "description": "這個工具可將逗號分隔值（CSV）檔案轉換為 JavaScript 物件表示法（JSON）資料結構。它支援各種 CSV 格式，並可自訂分隔符號、引號字元與註解符號。轉換器可將第一列視為標題、略過空白行，並自動偵測數字與布林值等資料型別。轉換後的 JSON 可用於資料遷移、備份，或作為其他應用程式的輸入。",
+      "title": "什麼是 CSV 轉 JSON 轉換器？"
+    },
+    "useHeaders": "使用標題列",
+    "useHeadersDescription": "將第一列視為欄位標題"
+  },
+  "csvToTsv": {
+    "description": "將 CSV 檔案上傳到下方表單，就會自動轉換為 TSV 檔案。在工具選項中，你可以自訂輸入的 CSV 格式——指定欄位分隔符號、引號字元與註解符號，也可以略過空白的 CSV 行，並選擇是否保留 CSV 的欄位標題。",
+    "longDescription": "這個工具可將逗號分隔值（CSV）資料轉換為 Tab 分隔值（TSV）資料。CSV 和 TSV 都是儲存表格資料的常見檔案格式，但它們使用不同的分隔符號來區隔值——CSV 使用逗號，TSV 則使用 Tab。",
+    "shortDescription": "將 CSV 資料轉換為 TSV 格式。",
+    "title": "將 CSV 轉換為 TSV"
+  },
+  "csvToXml": {
+    "description": "將 CSV 檔案轉換為 XML 格式，並可自訂各項選項。",
+    "shortDescription": "將 CSV 資料轉換為 XML 格式。",
+    "title": "將 CSV 轉換為 XML"
+  },
+  "csvToYaml": {
+    "description": "只要將 CSV 檔案上傳到下方表單，就會自動轉換為 YAML 檔案。在工具選項中，你可以指定欄位分隔字元、欄位引號字元與註解字元，讓工具配合自訂的 CSV 格式。此外，你也可以選擇輸出的 YAML 格式：保留 CSV 標題列，或不含 CSV 標題列。",
+    "longDescription": "這個工具可將 CSV（逗號分隔值）資料轉換為 YAML（Yet Another Markup Language）資料。CSV 是一種簡單的表格格式，用來表示由列與欄組成的矩陣式資料類型。而 YAML 則是較進階的格式（實際上是 JSON 的超集），能產生更便於人類閱讀的序列化資料，並支援清單、字典與巢狀物件。這個程式支援各種輸入 CSV 格式——輸入資料可以用逗號（預設）、分號、直線符號或其他完全不同的分隔符號分隔。你可以在選項中指定資料實際使用的分隔符號。同樣地，你也可以在選項中指定用來包住 CSV 欄位的引號字元（預設為雙引號）。你還可以透過在選項中指定註解符號來略過以註解開頭的行，讓資料保持乾淨，不含多餘的行。將 CSV 轉換為 YAML 有兩種方式。第一種方式是將每一列 CSV 轉換為一個 YAML 清單；第二種方式是從 CSV 第一列擷取標題，並建立以這些標題為鍵的 YAML 物件。你也可以指定 YAML 結構的縮排空格數，自訂輸出的 YAML 格式。如果需要反向轉換，也就是將 YAML 轉換為 CSV，可以使用我們的「將 YAML 轉換為 CSV」工具。CSV 超好用！",
+    "shortDescription": "快速將 CSV 檔案轉換為 YAML 檔案。",
+    "title": "將 CSV 轉換為 YAML"
+  },
+  "findIncompleteCsvRecords": {
+    "checkingOptions": "檢查選項",
+    "commentCharacterDescription": "輸入表示註解行開頭的字元。以此符號開頭的行將被略過。",
+    "csvInputOptions": "CSV 輸入選項",
+    "csvSeparatorDescription": "輸入 CSV 輸入檔案中用來分隔欄位的字元。",
+    "deleteLinesWithNoData": "刪除沒有資料的行",
+    "deleteLinesWithNoDataDescription": "移除 CSV 輸入檔案中的空白行。",
+    "description": "只要將 CSV 檔案上傳到下方表單，這個工具就會自動檢查所有資料列與欄位是否有缺漏的值。在工具選項中，你可以調整輸入檔案的格式（指定分隔符號、引號字元與註解字元）。此外，你還可以啟用空值檢查、略過空白行，並設定輸出中錯誤訊息的數量上限。",
+    "findEmptyValues": "找出空值",
+    "findEmptyValuesDescription": "顯示有關空白 CSV 欄位的訊息（這些不是缺少的欄位，而是內容為空的欄位）。",
+    "inputTitle": "輸入 CSV",
+    "limitNumberOfMessages": "限制訊息數量",
+    "messageLimitDescription": "設定輸出中訊息數量的上限。",
+    "quoteCharacterDescription": "輸入用來包住 CSV 輸入欄位的引號字元。",
+    "resultTitle": "CSV 狀態",
+    "shortDescription": "快速找出 CSV 中缺少值的資料列與欄位。",
+    "title": "找出不完整的 CSV 紀錄",
+    "toolInfo": {
+      "title": "什麼是{{title}}？"
+    }
+  },
+  "insertCsvColumns": {
+    "appendColumns": "附加欄位",
+    "commentCharacterDescription": "輸入表示註解行開頭的字元。以此符號開頭的行將被略過。",
+    "csvOptions": "CSV 選項",
+    "csvSeparator": "CSV 分隔符號",
+    "csvToInsert": "要插入的 CSV",
+    "csvToInsertDescription": "輸入一個或多個要插入 CSV 的欄位。用來分隔欄位的字元必須與 CSV 輸入檔案中使用的相同。附註：空白行會被忽略",
+    "customFillDescription": "如果輸入的 CSV 檔案不完整（缺少值），是否要在紀錄中補上空白欄位或自訂符號，讓 CSV 格式正確？",
+    "customFillValueDescription": "使用這個自訂值來填補缺少的欄位。（僅適用於上方的「自訂值」模式。）",
+    "customPosition": "自訂位置",
+    "customPositionOptionsDescription": "選擇在 CSV 檔案中插入欄位的方式。",
+    "description": "在指定位置為 CSV 資料新增欄位。",
+    "fillWithCustomValues": "以自訂值填補",
+    "fillWithEmptyValues": "以空值填補",
+    "headerName": "標題名稱",
+    "headerNameDescription": "你要在其後插入欄位的那一欄的標題。",
+    "inputTitle": "輸入 CSV",
+    "insertingPositionDescription": "指定要在 CSV 檔案的哪個位置插入欄位。",
+    "position": "位置",
+    "positionOptions": "位置選項",
+    "prependColumns": "前置欄位",
+    "quoteCharDescription": "輸入用來包住 CSV 輸入欄位的引號字元。",
+    "resultTitle": "輸出 CSV",
+    "rowNumberDescription": "你要在其後插入欄位的那一欄的編號。",
+    "separatorDescription": "輸入 CSV 輸入檔案中用來分隔欄位的字元。",
+    "shortDescription": "快速在 CSV 檔案的任何位置插入一個或多個新欄位。",
+    "title": "插入 CSV 欄位",
+    "toolInfo": {
+      "description": "這個工具可讓你在指定位置為 CSV 資料插入新欄位。你可以依標題名稱或欄位編號，在前面、後面或自訂位置插入欄位。",
+      "title": "插入 CSV 欄位"
+    }
+  },
+  "swapCsvColumns": {
+    "description": "只要將 CSV 檔案上傳到下方表單並指定要對調的欄位，工具就會自動在輸出檔案中更換指定欄位的位置。在工具選項中，你可以指定要對調的欄位位置或名稱，也可以修正不完整的資料，並選擇性地移除空白紀錄與已被註解掉的紀錄。",
+    "longDescription": "這個工具可透過對調欄位位置來重新整理 CSV 資料。對調欄位可將常用的資料放在一起或移到前面，讓 CSV 檔案更易讀，也更方便比較與編輯資料。例如，你可以將第一欄與最後一欄對調，或將第二欄與第三欄對調。",
+    "shortDescription": "重新排列 CSV 欄位。",
+    "title": "對調 CSV 欄位"
+  },
+  "transposeCsv": {
+    "description": "只要將 CSV 檔案上傳到下方表單，這個工具就會自動轉置你的 CSV。在工具選項中，你可以指定 CSV 中註解行開頭的字元以便將其移除。此外，如果 CSV 不完整（缺少值），你可以用空字元或自訂字元取代缺少的值。",
+    "longDescription": "這個工具可轉置逗號分隔值（CSV）。它會將 CSV 視為資料矩陣，並沿主對角線翻轉所有元素。輸出包含與輸入相同的 CSV 資料，但所有的列都變成欄，所有的欄都變成列。轉置後，CSV 檔案的維度會相反。例如，如果輸入檔案有 4 欄 3 列，輸出檔案就會有 3 欄 4 列。轉換過程中，程式也會清除資料中不必要的行，並修正不完整的資料。具體來說，工具會自動刪除所有空白紀錄，以及以特定字元開頭的註解（你可以在選項中設定該字元）。此外，當 CSV 資料損毀或遺失時，工具會以空白欄位或可在選項中指定的自訂欄位補齊檔案。CSV 超好用！",
+    "shortDescription": "快速轉置 CSV 檔案。",
+    "title": "轉置 CSV"
+  },
+  "tsvToJson": {
+    "description": "將 TSV（Tab 分隔值）資料轉換為 JSON 格式。將表格資料轉換為結構化的 JSON 物件。",
+    "shortDescription": "將 TSV 轉換為 JSON 格式",
+    "title": "TSV 轉 JSON"
+  }
+}

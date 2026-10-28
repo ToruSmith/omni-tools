@@ -1,0 +1,258 @@
+{
+  "chunk": {
+    "deleteEmptyItems": "刪除空白項目",
+    "deleteEmptyItemsDescription": "忽略空白項目，並將其排除在結果之外。",
+    "description": "將清單依固定大小分割為連續的區塊。這個工具會分隔輸入項目、依序分成區塊、可選擇性地補齊不完整的區塊，並使用自訂的分隔符號與包覆符號來格式化輸出。",
+    "emptyItemsAndPadding": "空白項目與補齊",
+    "groupNumberDescription": "每組的項目數量",
+    "groupSeparatorDescription": "放在各組之間的分隔符號",
+    "groupSizeAndSeparators": "組大小與輸出格式",
+    "inputItemSeparator": "輸入項目分隔符號",
+    "inputTitle": "輸入清單",
+    "itemSeparatorDescription": "放在組內各項目之間的分隔符號",
+    "leftWrapDescription": "加在每組前面的符號",
+    "padNonFullGroups": "補齊不完整的組",
+    "padNonFullGroupsDescription": "如果最後一組的項目少於所需數量，就將其補滿。",
+    "paddingCharDescription": "用來補齊不完整組的字元或值。",
+    "resultTitle": "分組後的輸出",
+    "rightWrapDescription": "加在每組後面的符號",
+    "shortDescription": "將清單分割為固定大小的區塊",
+    "splitOperators": {
+      "regex": {
+        "description": "使用正規表示式分割輸入項目。",
+        "title": "使用正規表示式分割"
+      },
+      "symbol": {
+        "description": "使用單一字元分割輸入項目。",
+        "title": "使用符號分割"
+      }
+    },
+    "splitSeparatorDescription": "用來分割輸入項目的分隔符號或正規表示式。",
+    "title": "清單分塊"
+  },
+  "duplicate": {
+    "concatenate": "串接",
+    "concatenateDescription": "串接各份副本（取消勾選時，項目會交錯排列）",
+    "copyDescription": "副本數量（可為小數）",
+    "description": "全球最簡單的瀏覽器版清單項目複製工具。輸入你的清單並指定複製條件，即可建立項目的副本。非常適合用於資料擴充、測試或建立重複的圖樣。",
+    "duplicationOptions": "複製選項",
+    "error": "錯誤",
+    "example1Description": "這個範例示範如何複製一份單字清單。",
+    "example1Title": "簡單複製",
+    "example2Description": "這個範例示範如何以反向順序複製清單。",
+    "example2Title": "反向複製",
+    "example3Description": "這個範例示範如何讓項目交錯排列，而不是串接。",
+    "example3Title": "交錯項目",
+    "example4Description": "這個範例示範如何以小數份數複製清單。",
+    "example4Title": "小數複製",
+    "examples": {
+      "fractional": {
+        "description": "這個範例示範如何以小數份數複製清單。",
+        "title": "小數複製"
+      },
+      "interweave": {
+        "description": "這個範例示範如何讓項目交錯排列，而不是串接。",
+        "title": "交錯項目"
+      },
+      "reverse": {
+        "description": "這個範例示範如何以反向順序複製清單。",
+        "title": "反向複製"
+      },
+      "simple": {
+        "description": "這個範例示範如何複製一份單字清單。",
+        "title": "簡單複製"
+      }
+    },
+    "inputTitle": "輸入清單",
+    "joinSeparatorDescription": "用來連接複製後清單的分隔符號",
+    "resultTitle": "複製後的清單",
+    "reverse": "反轉",
+    "reverseDescription": "反轉複製後的項目",
+    "shortDescription": "依指定條件複製清單項目",
+    "splitByRegex": "依正規表示式分割",
+    "splitBySymbol": "依符號分割",
+    "splitOptions": "分割選項",
+    "splitSeparatorDescription": "用來分割清單的分隔符號",
+    "title": "複製",
+    "toolInfo": {
+      "description": "這個工具可讓你複製清單中的項目。你可以指定副本數量（包括小數），控制項目是串接還是交錯排列，甚至可以反轉複製後的項目。它很適合用來建立重複的圖樣、產生測試資料，或以可預期的內容擴充清單。",
+      "title": "清單複製"
+    },
+    "unknownError": "發生未知錯誤",
+    "validation": {
+      "copyMustBeNumber": "副本數量必須是數字",
+      "copyMustBePositive": "副本數量必須為正數",
+      "copyRequired": "必須填寫副本數量",
+      "joinSeparatorRequired": "必須填寫連接分隔符號",
+      "separatorRequired": "必須填寫分隔符號"
+    }
+  },
+  "findMostPopular": {
+    "description": "全球最簡單的瀏覽器版清單熱門項目搜尋工具。輸入你的清單，立即取得出現次數最多的項目。非常適合用於資料分析、趨勢辨識或尋找共同元素。",
+    "displayFormatDescription": "如何顯示最熱門的清單項目？",
+    "displayOptions": {
+      "count": "顯示項目次數",
+      "percentage": "顯示項目百分比",
+      "total": "顯示項目總數"
+    },
+    "extractListItems": "如何擷取清單項目？",
+    "ignoreItemCase": "忽略項目大小寫",
+    "ignoreItemCaseDescription": "將所有清單項目轉為小寫後再比較。",
+    "inputTitle": "輸入清單",
+    "itemComparison": "項目比較",
+    "outputFormat": "熱門項目輸出格式",
+    "removeEmptyItems": "移除空白項目",
+    "removeEmptyItemsDescription": "比較時忽略空白項目。",
+    "resultTitle": "最熱門的項目",
+    "shortDescription": "找出出現次數最多的項目",
+    "sortOptions": {
+      "alphabetic": "依字母順序排序",
+      "count": "依次數排序"
+    },
+    "sortingMethodDescription": "選擇排序方式。",
+    "splitOperators": {
+      "regex": {
+        "description": "使用正規表示式分隔輸入清單項目。",
+        "title": "使用正規表示式分割"
+      },
+      "symbol": {
+        "description": "使用字元分隔輸入清單項目。",
+        "title": "使用符號分割"
+      }
+    },
+    "splitSeparatorDescription": "設定分隔符號或正規表示式。",
+    "title": "找出最熱門項目",
+    "trimItems": "修剪清單項目",
+    "trimItemsDescription": "比較項目前，先移除前後的空白"
+  },
+  "findUnique": {
+    "caseSensitiveItems": "區分大小寫的項目",
+    "caseSensitiveItemsDescription": "將大小寫不同的項目視為清單中各自獨立的唯一元素輸出。",
+    "delimiterDescription": "設定分隔符號或正規表示式。",
+    "description": "全球最簡單的瀏覽器版清單唯一項目搜尋工具。輸入你的清單，立即取得移除重複後的所有唯一值。非常適合用於資料清理、去除重複或尋找相異的元素。",
+    "findAbsolutelyUniqueItems": "找出絕對唯一的項目",
+    "findAbsolutelyUniqueItemsDescription": "只顯示清單中僅出現一次的項目。",
+    "inputListDelimiter": "輸入清單分隔符號",
+    "inputTitle": "輸入清單",
+    "outputListDelimiter": "輸出清單分隔符號",
+    "resultTitle": "唯一項目",
+    "shortDescription": "找出清單中的唯一項目",
+    "skipEmptyItems": "略過空白項目",
+    "skipEmptyItemsDescription": "輸出中不包含空白的清單項目。",
+    "title": "找出唯一項目",
+    "trimItems": "修剪清單項目",
+    "trimItemsDescription": "比較項目前，先移除前後的空白。",
+    "uniqueItemOptions": "唯一項目選項"
+  },
+  "reverse": {
+    "description": "這是一個超簡單的瀏覽器應用程式，可將所有清單項目反向輸出。輸入的項目可以用任何符號分隔，你也可以變更反轉後清單項目的分隔符號。",
+    "inputTitle": "輸入清單",
+    "itemSeparator": "項目分隔符號",
+    "itemSeparatorDescription": "設定分隔符號或正規表示式。",
+    "outputListOptions": "輸出清單選項",
+    "outputSeparatorDescription": "輸出清單的項目分隔符號。",
+    "resultTitle": "反轉後的清單",
+    "shortDescription": "快速反轉清單",
+    "splitOperators": {
+      "regex": {
+        "description": "使用正規表示式分隔輸入清單項目。",
+        "title": "使用正規表示式分割"
+      },
+      "symbol": {
+        "description": "使用字元分隔輸入清單項目。",
+        "title": "使用符號分割"
+      }
+    },
+    "splitterMode": "分割模式",
+    "title": "反轉",
+    "toolInfo": {
+      "description": "使用這個工具，你可以反轉清單中項目的順序。工具會先將輸入的清單拆分為個別項目，然後從最後一個項目到第一個項目逐一處理，並在過程中將每個項目輸出。輸入的清單可以包含任何能以文字資料表示的內容，包括單一數字、數值、字串、單字、句子等等。輸入項目的分隔符號也可以是正規表示式。例如，正規表示式 /[;,]/ 可讓你使用以逗號或分號分隔的項目。輸入與輸出清單項目的分隔符號都可以在選項中自訂。預設情況下，輸入與輸出的清單都以逗號分隔。清單超好用！",
+      "title": "什麼是清單反轉器？"
+    }
+  },
+  "rotate": {
+    "description": "全球最簡單的瀏覽器版清單項目旋轉工具。輸入你的清單並指定旋轉量，即可將項目移動指定的位置數。非常適合用於資料處理、循環位移或重新排序清單。",
+    "shortDescription": "將清單項目旋轉指定的位置數",
+    "title": "旋轉"
+  },
+  "shuffle": {
+    "delimiterDescription": "設定分隔符號或正規表示式。",
+    "description": "全球最簡單的瀏覽器版清單項目洗牌工具。輸入你的清單，立即取得項目順序隨機的版本。非常適合用來製造變化、測試隨機性，或打亂已排序的資料。",
+    "inputListSeparator": "輸入清單分隔符號",
+    "inputTitle": "輸入清單",
+    "joinSeparatorDescription": "在隨機排列後的清單中使用這個分隔符號。",
+    "outputLengthDescription": "輸出這麼多個隨機項目",
+    "resultTitle": "隨機排列後的清單",
+    "shortDescription": "隨機排列清單項目的順序",
+    "shuffledListLength": "隨機排列後的清單長度",
+    "shuffledListSeparator": "隨機排列後的清單分隔符號",
+    "title": "隨機排列"
+  },
+  "sort": {
+    "caseSensitive": "區分大小寫排序",
+    "caseSensitiveDescription": "將大寫與小寫項目分開排序。在遞增清單中，大寫字母排在小寫字母之前。（僅適用於依字母順序排序的模式。）",
+    "description": "全球最簡單的瀏覽器版清單項目排序工具。輸入你的清單並指定排序條件，即可將項目依遞增或遞減順序整理。非常適合用於資料整理、文字處理或建立有序清單。",
+    "inputItemSeparator": "輸入項目分隔符號",
+    "inputTitle": "輸入清單",
+    "joinSeparatorDescription": "使用這個符號作為排序後清單中各項目之間的連接符號。",
+    "orderDescription": "選擇排序順序。",
+    "orderOptions": {
+      "decreasing": "遞減順序",
+      "increasing": "遞增順序"
+    },
+    "removeDuplicates": "移除重複項目",
+    "removeDuplicatesDescription": "刪除重複的清單項目。",
+    "resultTitle": "排序後的清單",
+    "shortDescription": "依指定順序排序清單項目",
+    "sortMethod": "排序方式",
+    "sortMethodDescription": "選擇排序方式。",
+    "sortOptions": {
+      "alphabetic": "依字母順序排序",
+      "length": "依長度排序",
+      "numeric": "依數值排序"
+    },
+    "sortedItemProperties": "排序項目屬性",
+    "splitOperators": {
+      "regex": {
+        "description": "使用正規表示式分隔輸入清單項目。",
+        "title": "使用正規表示式分割"
+      },
+      "symbol": {
+        "description": "使用字元分隔輸入清單項目。",
+        "title": "使用符號分割"
+      }
+    },
+    "splitSeparatorDescription": "設定分隔符號或正規表示式。",
+    "title": "排序"
+  },
+  "truncate": {
+    "description": "全球最簡單的瀏覽器版清單截斷工具。輸入你的清單並指定要保留的項目數量上限。非常適合用於資料處理、清單管理或限制內容長度。",
+    "shortDescription": "將清單截斷為指定的項目數量",
+    "title": "截斷"
+  },
+  "unwrap": {
+    "description": "全球最簡單的瀏覽器版清單項目解除包覆工具。輸入已包覆的清單並指定解除條件，即可將整理過的項目攤平。非常適合用於資料處理、文字處理或從結構化清單中擷取內容。",
+    "shortDescription": "將清單項目從結構化格式中解除包覆",
+    "title": "解除包覆"
+  },
+  "wrap": {
+    "description": "在每個清單項目的前後加上文字。",
+    "inputTitle": "輸入清單",
+    "joinSeparatorDescription": "用來連接包覆後清單的分隔符號",
+    "leftTextDescription": "加在每個項目前面的文字",
+    "removeEmptyItems": "移除空白項目",
+    "resultTitle": "包覆後的清單",
+    "rightTextDescription": "加在每個項目後面的文字",
+    "shortDescription": "依指定條件包覆清單項目",
+    "splitByRegex": "依正規表示式分割",
+    "splitBySymbol": "依符號分割",
+    "splitOptions": "分割選項",
+    "splitSeparatorDescription": "用來分割清單的分隔符號",
+    "title": "包覆",
+    "toolInfo": {
+      "description": "這個工具可讓你在清單中每個項目的前後加上文字。你可以為左右兩側指定不同的文字，並控制清單的處理方式。它很適合用來為清單項目加上引號、括號或其他格式，為不同格式準備資料，或建立結構化文字。",
+      "title": "清單包覆"
+    },
+    "wrapOptions": "包覆選項"
+  }
+}

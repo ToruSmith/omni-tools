@@ -1,0 +1,251 @@
+# 手動同步上游（不需要本機 git）
+#
+# 用法：GitHub 倉庫 → Actions → 「同步上游（手動）」→ Run workflow。
+#
+# 它會做什麼：
+#   1. 抓取上游最新版，只在「本次上游改了什麼」上做安全檢查與繁中翻譯檢查。
+#   2. 把上游最新版推成 `upstream-sync` 分支，並開一個 Pull Request 到你的預設分支。
+#      （不會直接改你的 main，也不會 force push；你按下 Merge 才會真的合併。）
+#   3. 檢查結果會寫在 PR 內文與這次執行的 Summary 裡。
+#
+# 安全設計：
+#   - 上游內容只當資料讀取（git show / git diff），從不執行，也不 npm install。
+#   - 檢查腳本一律來自「你自己的」預設分支，不是上游。
+#   - 若上游改動了 .github/workflows，預設會停下來讓你先看過 diff，
+#     確認沒問題再勾選 allow_workflow_changes 重跑。
+#
+# 第一次使用前請看 FORK.md（需要打開一個 repo 設定）。
+name: 同步上游（手動）
+run-name: 同步上游 ${{ inputs.upstream_repo }}@${{ inputs.upstream_branch }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      upstream_repo:
+        description: '上游倉庫（owner/name）'
+        required: true
+        default: 'iib0011/omni-tools'
+        type: string
+      upstream_branch:
+        description: '上游分支'
+        required: true
+        default: 'main'
+        type: string
+      allow_workflow_changes:
+        description: '上游改動了 .github/workflows 時，仍然建立同步分支（請先看過報告中的 diff）'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-upstream
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: 抓取上游、檢查、開 PR
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      # 一律用 env 傳遞輸入值，不直接把 ${{ }} 內插進 shell 指令，避免指令注入
+      UPSTREAM_REPO: ${{ inputs.upstream_repo }}
+      UPSTREAM_BRANCH: ${{ inputs.upstream_branch }}
+      ALLOW_WORKFLOW_CHANGES: ${{ inputs.allow_workflow_changes }}
+      DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+      SYNC_BRANCH: upstream-sync
+      GH_REPO: ${{ github.repository }}
+      # 預設用內建 token；若上游會改 workflow，需要在 repo secrets 加 SYNC_TOKEN（見 FORK.md）
+      GH_TOKEN: ${{ secrets.SYNC_TOKEN || secrets.GITHUB_TOKEN }}
+    steps:
+      - name: 取出你的預設分支（可信任的腳本來源）
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6.1.0
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+          token: ${{ secrets.SYNC_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: 抓取上游
+        id: fetch
+        run: |
+          set -euo pipefail
+          [[ "$UPSTREAM_REPO" =~ ^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$ ]] || { echo "::error::upstream_repo 格式不正確：$UPSTREAM_REPO"; exit 1; }
+          [[ "$UPSTREAM_BRANCH" =~ ^[A-Za-z0-9_./-]+$ ]] || { echo "::error::upstream_branch 格式不正確：$UPSTREAM_BRANCH"; exit 1; }
+
+          git remote add upstream "https://github.com/${UPSTREAM_REPO}.git"
+          git fetch --no-tags upstream "+refs/heads/${UPSTREAM_BRANCH}:refs/remotes/upstream/${UPSTREAM_BRANCH}"
+          UP=$(git rev-parse "refs/remotes/upstream/${UPSTREAM_BRANCH}")
+          echo "up=$UP" >> "$GITHUB_OUTPUT"
+
+          if git merge-base --is-ancestor "$UP" HEAD; then
+            echo "uptodate=true" >> "$GITHUB_OUTPUT"
+            echo "### ✅ 已經是最新" >> "$GITHUB_STEP_SUMMARY"
+            echo "你的 \`${DEFAULT_BRANCH}\` 已包含上游 \`${UP:0:9}\`，不需要同步。" >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          echo "uptodate=false" >> "$GITHUB_OUTPUT"
+
+          BASE=$(git merge-base HEAD "$UP" || true)
+          if [ -z "$BASE" ]; then
+            echo "::error::找不到你的倉庫與上游的共同祖先（可能不是 fork，或歷史被改寫）。"
+            exit 1
+          fi
+          echo "base=$BASE" >> "$GITHUB_OUTPUT"
+          echo "new_commits=$(git rev-list --count "$BASE..$UP")" >> "$GITHUB_OUTPUT"
+
+      - name: 預演合併（看會不會衝突）
+        id: preview
+        if: steps.fetch.outputs.uptodate != 'true'
+        env:
+          UP: ${{ steps.fetch.outputs.up }}
+        run: |
+          set +e
+          OUT=$(git merge-tree --write-tree --name-only --no-messages HEAD "$UP" 2>&1)
+          CODE=$?
+          set -e
+          if [ "$CODE" -eq 0 ]; then
+            echo "status=clean" >> "$GITHUB_OUTPUT"
+            : > conflicts.txt
+          elif [ "$CODE" -eq 1 ]; then
+            echo "status=conflict" >> "$GITHUB_OUTPUT"
+            printf '%s\n' "$OUT" | awk 'NR>1 && NF==0 {exit} NR>1 {print}' > conflicts.txt
+          else
+            echo "status=unknown" >> "$GITHUB_OUTPUT"
+            : > conflicts.txt
+          fi
+
+      - name: 翻譯檢查（繁體中文）
+        id: i18n
+        if: steps.fetch.outputs.uptodate != 'true'
+        env:
+          UP: ${{ steps.fetch.outputs.up }}
+        run: node scripts/fork/i18n-check.mjs --ref-rev "$UP" --out i18n.md
+
+      - name: 安全檢查（只看這次上游帶進來的變動）
+        id: security
+        if: steps.fetch.outputs.uptodate != 'true'
+        env:
+          UP: ${{ steps.fetch.outputs.up }}
+          BASE: ${{ steps.fetch.outputs.base }}
+        run: node scripts/fork/security-check.mjs --base "$BASE" --head "$UP" --out security.md
+
+      - name: 組合報告
+        if: steps.fetch.outputs.uptodate != 'true'
+        env:
+          UP: ${{ steps.fetch.outputs.up }}
+          NEW_COMMITS: ${{ steps.fetch.outputs.new_commits }}
+          MERGE_STATUS: ${{ steps.preview.outputs.status }}
+          RISK: ${{ steps.security.outputs.risk }}
+          I18N_MISSING: ${{ steps.i18n.outputs.i18n_missing }}
+          I18N_BAD: ${{ steps.i18n.outputs.i18n_bad_placeholders }}
+        run: |
+          set -euo pipefail
+          case "$RISK" in HIGH) RISK_TEXT='🔴 高';; MEDIUM) RISK_TEXT='🟡 中';; *) RISK_TEXT='🟢 低';; esac
+          case "$MERGE_STATUS" in
+            clean) MERGE_TEXT='✅ 可以自動合併';;
+            conflict) MERGE_TEXT='⚠️ 有衝突，需要在網頁上解決（見下方）';;
+            *) MERGE_TEXT='❔ 無法預演，請以 PR 頁面顯示為準';;
+          esac
+          {
+            echo "## 🔄 同步上游 \`${UPSTREAM_REPO}@${UPSTREAM_BRANCH}\`"
+            echo
+            echo "- 上游最新 commit：\`${UP:0:9}\`（比你的 \`${DEFAULT_BRANCH}\` 多 ${NEW_COMMITS} 個 commit）"
+            echo "- 與你的 \`${DEFAULT_BRANCH}\` 合併：${MERGE_TEXT}"
+            echo "- 安全檢查風險：${RISK_TEXT}"
+            echo "- 繁體中文：缺 ${I18N_MISSING} 條翻譯、${I18N_BAD} 條變數不一致"
+            echo
+            if [ -s conflicts.txt ]; then
+              echo "**會衝突的檔案**"
+              echo
+              sed 's/^/- `/; s/$/`/' conflicts.txt
+              echo
+              echo "> 這通常只是語言清單（\`src/i18n/index.ts\`、\`Navbar\`）旁邊也被上游改動。"
+              echo "> 在 PR 頁面按 **Resolve conflicts**，**兩邊都保留**（確保清單裡還有 \`'zh-TW'\`）即可。"
+              echo
+            fi
+            echo "### 合併前後你要做的事"
+            echo
+            echo "1. 看下面的**安全檢查**，🔴 的項目請逐項確認。"
+            echo "2. 沒問題就按 **Merge pull request**。"
+            echo "3. 合併後如果上游新增了功能，再到 \`public/locales/zh-TW/\` 補翻譯（沒補也不會壞，會先顯示英文）。"
+            echo
+            echo "---"
+            echo
+            cat security.md
+            echo
+            echo "---"
+            echo
+            cat i18n.md
+            echo
+            echo "<sub>由 \`.github/workflows/sync-upstream.yml\` 自動產生；每次重新執行會更新這個 PR 的內文。</sub>"
+          } > body.full.md
+          # PR 內文上限約 65,000 字元
+          head -c 60000 body.full.md > body.md
+          if [ "$(wc -c < body.full.md)" -gt 60000 ]; then
+            printf '\n\n…（報告過長已截斷，完整內容請看這次 Actions 執行的 Summary）\n' >> body.md
+          fi
+          cat body.full.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: 閘門 - 上游改了 workflow 時先停下來
+        if: steps.fetch.outputs.uptodate != 'true' && steps.security.outputs.workflow_changed == 'true' && env.ALLOW_WORKFLOW_CHANGES != 'true'
+        run: |
+          echo "::error title=上游修改了 GitHub Actions 設定::為了安全，已先停止，沒有建立同步分支。請看這次執行 Summary 裡的 workflow diff；確認沒問題後，重新執行並勾選 allow_workflow_changes。"
+          exit 1
+
+      - name: 推送同步分支（不會 force push）
+        id: push
+        if: steps.fetch.outputs.uptodate != 'true'
+        env:
+          UP: ${{ steps.fetch.outputs.up }}
+        run: |
+          set -euo pipefail
+          PUSH_ARGS=()
+          git fetch --no-tags origin "+refs/heads/${SYNC_BRANCH}:refs/remotes/origin/${SYNC_BRANCH}" 2>/dev/null || true
+          if git rev-parse -q --verify "refs/remotes/origin/${SYNC_BRANCH}" >/dev/null; then
+            OLD=$(git rev-parse "refs/remotes/origin/${SYNC_BRANCH}")
+            if git merge-base --is-ancestor "$OLD" "$UP"; then
+              : # 舊的同步分支只是舊版上游，直接快轉即可
+            elif git merge-base --is-ancestor "$OLD" HEAD; then
+              # 舊的同步分支（含你解衝突的 commit）已經合併進你的預設分支，重設它不會遺失任何東西
+              PUSH_ARGS=(--force-with-lease="refs/heads/${SYNC_BRANCH}:${OLD}")
+            else
+              echo "::error title=同步分支上有尚未合併、不屬於上游的 commit::\`${SYNC_BRANCH}\` 上有你在網頁上解衝突時加進去、而且還沒合併的 commit（或上游改寫了歷史）。為避免蓋掉它，已停止。請先合併或關閉現有的同步 PR，並刪除 \`${SYNC_BRANCH}\` 分支後重跑。"
+              exit 1
+            fi
+          fi
+          if ! git push "${PUSH_ARGS[@]}" origin "${UP}:refs/heads/${SYNC_BRANCH}" 2> push.log; then
+            cat push.log
+            echo "::error title=推送同步分支失敗::若訊息提到 workflow 權限，請依 FORK.md 新增 SYNC_TOKEN（需要 Contents、Pull requests、Workflows 的寫入權限）。"
+            exit 1
+          fi
+
+      - name: 建立或更新 Pull Request
+        if: steps.fetch.outputs.uptodate != 'true'
+        env:
+          UP: ${{ steps.fetch.outputs.up }}
+        run: |
+          set -euo pipefail
+          TITLE="同步上游：${UPSTREAM_REPO} @ ${UP:0:9}"
+          NUM=$(gh pr list --head "$SYNC_BRANCH" --base "$DEFAULT_BRANCH" --state open --json number --jq '.[0].number // empty')
+          if [ -n "$NUM" ]; then
+            gh pr edit "$NUM" --title "$TITLE" --body-file body.md
+            echo "### ✅ 已更新現有的同步 PR #${NUM}" >> "$GITHUB_STEP_SUMMARY"
+          else
+            if gh pr create --head "$SYNC_BRANCH" --base "$DEFAULT_BRANCH" --title "$TITLE" --body-file body.md 2> pr.log; then
+              echo "### ✅ 已建立同步 PR，請到 Pull requests 頁面查看" >> "$GITHUB_STEP_SUMMARY"
+            else
+              cat pr.log
+              {
+                echo "### ⚠️ 同步分支已推送，但無法自動建立 PR"
+                echo
+                echo "請到 **Settings → Actions → General → Workflow permissions**，勾選 **Allow GitHub Actions to create and approve pull requests**，然後重跑；"
+                echo "或直接點這個連結手動建立：https://github.com/${GH_REPO}/compare/${DEFAULT_BRANCH}...${SYNC_BRANCH}?expand=1"
+              } >> "$GITHUB_STEP_SUMMARY"
+              echo "::warning title=無法自動建立 PR::請看這次執行的 Summary。"
+            fi
+          fi

@@ -1,0 +1,270 @@
+{
+  "audio": {
+    "changeSpeed": {
+      "description": "更改音訊檔案的播放速度。在保持音高不變的情況下加快或放慢音訊。",
+      "name": "更改音訊速度",
+      "shortDescription": "更改音訊檔案的速度"
+    },
+    "extractAudio": {
+      "description": "從影片檔案中擷取音軌，並以你選擇的格式（AAC、MP3、WAV）儲存為獨立的音訊檔案。",
+      "name": "擷取音訊",
+      "shortDescription": "將影片檔案（MP4、MOV 等）中的音訊擷取為 AAC、MP3 或 WAV。"
+    }
+  },
+  "baseFileInput": {
+    "copyFailed": "複製失敗：{{error}}",
+    "dropFileHere": "將{{type}}拖放到這裡",
+    "fileCopied": "檔案已複製",
+    "selectFileDescription": "點擊此處從你的裝置選擇{{type}}，按 Ctrl+V 使用剪貼簿中的{{type}}，或從桌面拖放檔案"
+  },
+  "categories": {
+    "audio": {
+      "description": "處理音訊的工具——從影片擷取音訊、調整音訊速度、合併多個音訊檔案等等。",
+      "title": "音訊工具"
+    },
+    "converters": {
+      "description": "在不同格式之間轉換資料的工具——轉換圖片、音訊、影片、文字等等。",
+      "title": "轉換工具"
+    },
+    "csv": {
+      "description": "處理 CSV 檔案的工具——將 CSV 轉換為其他格式、處理 CSV 資料、驗證 CSV 結構，高效處理 CSV 檔案。",
+      "title": "CSV 工具"
+    },
+    "gif": {
+      "description": "處理 GIF 動畫的工具——建立透明 GIF、擷取 GIF 影格、為 GIF 加入文字、裁切、旋轉、反轉 GIF 等等。",
+      "title": "GIF 工具"
+    },
+    "image-generic": {
+      "description": "處理圖片的工具——壓縮、調整大小、裁切、轉換為 JPG、旋轉、移除背景等等。",
+      "title": "圖片工具"
+    },
+    "json": {
+      "description": "處理 JSON 資料結構的工具——美化與壓縮 JSON 物件、攤平 JSON 陣列、將 JSON 值字串化、分析資料等等",
+      "title": "JSON 工具"
+    },
+    "list": {
+      "description": "處理清單的工具——排序、反轉、隨機排列清單，找出唯一與重複的項目，變更清單項目分隔符號等等。",
+      "title": "清單工具"
+    },
+    "number": {
+      "description": "處理數字的工具——產生數字序列、將數字轉為文字或將文字轉為數字、排序、四捨五入、質因數分解等等。",
+      "title": "數字工具"
+    },
+    "pdf": {
+      "description": "處理 PDF 檔案的工具——擷取 PDF 中的文字、將 PDF 轉換為其他格式、編輯 PDF 等等。",
+      "title": "PDF 工具"
+    },
+    "png": {
+      "description": "處理 PNG 圖片的工具——將 PNG 轉換為 JPG、建立透明 PNG、變更 PNG 顏色、裁切、旋轉、調整 PNG 大小等等。",
+      "title": "PNG 工具"
+    },
+    "seeAll": "查看全部{{title}}",
+    "string": {
+      "description": "處理文字的工具——將文字轉換為圖片、尋找並取代文字、將文字拆分為片段、合併文字行、重複文字等等。",
+      "title": "文字工具"
+    },
+    "time": {
+      "description": "處理時間與日期的工具——計算時間差、在時區之間轉換、格式化日期、產生日期序列等等。",
+      "title": "時間工具"
+    },
+    "try": "試用{{title}}",
+    "video": {
+      "description": "處理影片的工具——擷取影片影格、將影片製作成 GIF、將影片轉換為不同格式等等。",
+      "title": "影片工具"
+    },
+    "xml": {
+      "description": "處理 XML 資料結構的工具——檢視器、美化器、驗證器等等",
+      "title": "XML 工具"
+    }
+  },
+  "converters": {
+    "audioconverter": {
+      "description": "在不同格式之間轉換音訊檔案。",
+      "longDescription": "這個工具可讓你將音訊檔案從一種格式轉換為另一種格式，支援多種音訊格式，輕鬆完成轉換。",
+      "shortDescription": "將音訊檔案轉換為各種格式。",
+      "title": "音訊轉換器"
+    }
+  },
+  "csv": {
+    "findIncompleteCsvRecords": {
+      "description": "只要將 CSV 檔案上傳到下方表單，這個工具就會自動檢查所有資料列與欄位是否有缺漏的值。在工具選項中，你可以調整輸入檔案的格式（指定分隔符號、引號字元與註解字元）。此外，你還可以啟用空值檢查、略過空白行，並設定輸出中錯誤訊息的數量上限。",
+      "name": "找出不完整的 CSV 紀錄",
+      "shortDescription": "快速找出 CSV 中缺少值的資料列與欄位。"
+    }
+  },
+  "hero": {
+    "brand": "OmniTools",
+    "description": "使用 OmniTools 大幅提升你的工作效率，這套終極工具箱能讓你快速完成各種事情！直接在瀏覽器中使用數千種易用的工具，編輯圖片、文字、清單與資料。",
+    "examples": {
+      "calculateNumberSum": "計算數字總和",
+      "changeGifSpeed": "更改 GIF 速度",
+      "compressPng": "壓縮 PNG",
+      "createTransparentImage": "建立透明圖片",
+      "prettifyJson": "美化 JSON",
+      "sortList": "排序清單",
+      "splitPdf": "分割 PDF",
+      "splitText": "分割文字",
+      "trimVideo": "剪輯影片"
+    },
+    "search": {
+      "noResult": "找不到結果，請試著調整搜尋或篩選條件",
+      "placeholder": "搜尋所有工具"
+    },
+    "title": "快速完成工作，就用"
+  },
+  "inputFooter": {
+    "clear": "清除",
+    "copyToClipboard": "複製到剪貼簿",
+    "importFromFile": "選擇檔案"
+  },
+  "list": {
+    "group": {
+      "description": "全球最簡單的瀏覽器版清單分組工具。輸入你的清單並指定分組條件，即可將項目整理為合理的群組。非常適合用來分類資料、整理資訊或建立結構化清單。支援自訂分隔符號與多種分組選項。",
+      "name": "分組",
+      "shortDescription": "依共同屬性將清單項目分組"
+    },
+    "reverse": {
+      "description": "這是一個超簡單的瀏覽器應用程式，可將所有清單項目反向輸出。輸入的項目可以用任何符號分隔，你也可以變更反轉後清單項目的分隔符號。",
+      "name": "反轉",
+      "shortDescription": "快速反轉清單"
+    },
+    "sort": {
+      "description": "這是一個超簡單的瀏覽器應用程式，可將清單中的項目由小到大或由大到小排序。你可以依字母順序、數值或長度排序，也可以移除重複與空白的項目，並修剪項目前後多餘的空白。你可以使用任何分隔字元來分隔輸入的清單項目，或改用正規表示式來分隔。此外，你還可以為排序後的輸出清單建立新的分隔符號。",
+      "name": "排序",
+      "shortDescription": "快速排序清單"
+    }
+  },
+  "navbar": {
+    "buyMeACoffee": "請我喝杯咖啡",
+    "helpTranslate": "協助翻譯",
+    "home": "首頁",
+    "tools": "工具"
+  },
+  "number": {
+    "generate": {
+      "description": "在瀏覽器中快速產生一串整數。只要在下方選項中指定第一個整數、變化值與總數量，這個工具就會產生相應數量的整數",
+      "name": "產生數字",
+      "shortDescription": "在瀏覽器中快速產生一串整數"
+    },
+    "sum": {
+      "description": "這是一個超簡單的瀏覽器應用程式，可將數字加總。輸入的數字可以用任何符號分隔，你也可以變更加總數字的分隔符號。",
+      "name": "數字加總",
+      "shortDescription": "快速加總一串數字"
+    }
+  },
+  "numericInputWithUnit": {
+    "unit": "單位"
+  },
+  "pdf": {
+    "compressPdf": {
+      "description": "使用 Ghostscript 在維持品質的同時縮小 PDF 檔案大小",
+      "name": "壓縮 PDF",
+      "shortDescription": "在瀏覽器中安全地壓縮 PDF 檔案"
+    },
+    "mergePdf": {
+      "description": "將多個 PDF 檔案合併為單一文件。",
+      "name": "合併 PDF",
+      "shortDescription": "將多個 PDF 檔案合併為單一文件"
+    },
+    "pdfToEpub": {
+      "description": "將 PDF 文件轉換為 EPUB 檔案，提升在電子書閱讀器上的相容性。",
+      "name": "PDF 轉 EPUB",
+      "shortDescription": "將 PDF 檔案轉換為 EPUB 格式"
+    },
+    "protectPdf": {
+      "description": "在瀏覽器中安全地為你的 PDF 檔案加上密碼保護",
+      "name": "保護 PDF",
+      "shortDescription": "安全地為 PDF 檔案設定密碼保護"
+    },
+    "splitPdf": {
+      "description": "使用頁碼或頁碼範圍（例如 1,5-8）從 PDF 檔案中擷取指定頁面",
+      "name": "分割 PDF",
+      "shortDescription": "從 PDF 檔案中擷取指定頁面"
+    }
+  },
+  "resultFooter": {
+    "copy": "複製到剪貼簿",
+    "download": "下載"
+  },
+  "string": {
+    "createPalindrome": {
+      "description": "全球最簡單的瀏覽器版迴文建立工具。輸入任何文字，立即將它轉換為正讀與反讀都相同的迴文。非常適合文字遊戲、建立對稱的文字圖樣，或探索語言趣味。",
+      "name": "建立迴文",
+      "shortDescription": "建立正讀與反讀都相同的文字"
+    },
+    "palindrome": {
+      "description": "全球最簡單的瀏覽器版迴文檢查工具。立即確認你的文字是否正讀與反讀都相同。非常適合文字謎題、語言分析，或驗證對稱的文字圖樣。支援多種分隔符號與多個單字組成的迴文偵測。",
+      "name": "迴文",
+      "shortDescription": "檢查文字是否正讀與反讀都相同"
+    },
+    "repeat": {
+      "description": "這個工具可讓你將指定文字重複多次，並可選擇加上分隔符號。",
+      "name": "重複文字",
+      "shortDescription": "將文字重複多次"
+    },
+    "reverse": {
+      "description": "全球最簡單的瀏覽器版文字反轉工具。輸入任何文字，即可立即逐字元反轉。非常適合製作鏡像文字、分析迴文或玩文字圖樣。反轉時會保留空白與特殊字元。",
+      "name": "反轉",
+      "shortDescription": "將任何文字逐字元反轉"
+    },
+    "toMorse": {
+      "description": "全球最簡單的瀏覽器版文字轉摩斯密碼工具。將文字載入左側的輸入表單，輸出區就會立即顯示摩斯密碼。強大、免費又快速。載入文字，得到摩斯密碼。",
+      "name": "字串轉摩斯密碼",
+      "shortDescription": "快速將文字編碼為摩斯密碼"
+    },
+    "uppercase": {
+      "description": "全球最簡單的瀏覽器版文字轉大寫工具。只要輸入文字，就會自動轉換為全部大寫字母。非常適合製作標題、強調文字或統一文字格式。支援多種文字格式並保留特殊字元。",
+      "name": "大寫",
+      "shortDescription": "將文字轉換為大寫字母"
+    }
+  },
+  "toolExamples": {
+    "subtitle": "點擊試試看！",
+    "title": "{{title}}範例"
+  },
+  "toolFileResult": {
+    "copied": "檔案已複製",
+    "copyFailed": "複製失敗：{{error}}",
+    "loading": "載入中…可能需要一點時間。",
+    "result": "結果"
+  },
+  "toolHeader": {
+    "seeExamples": "查看範例"
+  },
+  "toolLayout": {
+    "allToolsTitle": "全部{{type}}"
+  },
+  "toolMultiFileResult": {
+    "copied": "檔案已複製",
+    "copyFailed": "複製失敗：{{error}}",
+    "loading": "載入中…可能需要一點時間。",
+    "result": "結果"
+  },
+  "toolMultipleInput": {
+    "deleteFile": "刪除檔案",
+    "dropFilesHere": "將檔案拖放到這裡",
+    "inputTitle": "輸入{{type}}",
+    "invalidFileType": "檔案類型無效。請選擇支援類型的檔案。",
+    "noFilesSelected": "尚未選擇檔案",
+    "selectFilesDescription": "點擊此處從你的裝置選擇檔案，或將檔案拖放到這裡"
+  },
+  "toolOptions": {
+    "title": "工具選項"
+  },
+  "toolTextInput": {
+    "copied": "文字已複製",
+    "copyFailed": "複製失敗：{{error}}",
+    "input": "輸入文字",
+    "placeholder": "在這裡輸入你的文字…"
+  },
+  "toolTextResult": {
+    "copied": "文字已複製",
+    "copyFailed": "複製失敗：{{error}}",
+    "loading": "載入中…可能需要一點時間。",
+    "result": "結果"
+  },
+  "userTypes": {
+    "developers": "開發人員",
+    "generalUsers": "一般使用者"
+  }
+}
